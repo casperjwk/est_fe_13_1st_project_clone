@@ -238,7 +238,16 @@ hr {
   box-shadow: none;
 }
 
-/* 헤더 - 홍길동 */
+/* 헤더 - 김찬희 */
+.nav-link {
+  font-size: var(--body-m);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary-main);
+}
 
 /* 푸터 링크 - 김소영 */
 .footer-link {
