@@ -10,6 +10,20 @@
 .benefit {
   background: var(--background);
 }
+.benefit-cards {
+  width: 100%;
+}
+.benefit-cards ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 320px;
+  background: var(--primary-light);
+  border-radius: 10px;
+  gap: 24px;
+}
 /* 메인 : 결과 - 최정원 */
 
 /* 메인 : 수강생 후기 - 김윤수 */
