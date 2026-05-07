@@ -125,7 +125,7 @@ hr {
 }
 
 /* 버튼 */
-/* 링크 버튼 */
+/* 링크 버튼 - 최정원 */
 .btn {
   position: relative;
   display: inline-flex;
@@ -212,6 +212,7 @@ hr {
   gap: 10px;
   border: 1px solid var(--dark-accent1);
   border-radius: 100px;
+  background: var(--background);
   align-items: center;
   text-align: center;
   font-size: var(--body-l);
