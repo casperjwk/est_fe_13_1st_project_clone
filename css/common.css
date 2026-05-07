@@ -5,10 +5,10 @@
   --base-font: 16px;
 
   /* 색상 스타일 */
-  --gradiant: linear-gradient(to bottom, #1dcf6f, #3b82f6);
-  --gradiant-hero: linear-gradient(to bottom, #f7f9fa, #6ee7a8);
-  --gradiant-button: linear-gradient(to right, #1dcf6f, #3b82f6);
-  --gradiant-logo: linear-gradient(135deg, #1dcf6f, #3b82f6);
+  --gradient: linear-gradient(to bottom, #1dcf6f, #3b82f6);
+  --gradient-hero: linear-gradient(to bottom, #f7f9fa, #6ee7a8);
+  --gradient-button: linear-gradient(to right, #1dcf6f, #3b82f6);
+  --gradient-logo: linear-gradient(135deg, #1dcf6f, #3b82f6);
   --primary-main: #1dcf6f;
   --primary-light: #6ee7a8;
   --primary-hover: #17b960;
