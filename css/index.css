@@ -5,6 +5,13 @@
 /* 메인 : 문제 제기 - 김정우 */
 
 /* 메인 : 프로그램 소개 - 김정우 */
+.program img {
+  width: 150px;
+  height: 150px;
+}
+#double {
+  width: 300px;
+}
 
 /* 메인 : 혜택 - 최정원 */
 
