@@ -3,7 +3,35 @@
 /* 메인 : 히어로 - 김찬희 */
 
 /* 메인 : 문제 제기 - 김정우 */
-
+.title {
+  width: 700px;
+  height: 100px;
+  gap: 16px;
+  padding: 30px 8px;
+}
+.question-container {
+  width: 1180px;
+  height: 300px;
+  gap: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.question-list {
+  width: 200px;
+  height: 300px;
+  gap: 20px;
+  padding: 10px;
+}
+li > h3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* 메인 : 프로그램 소개 - 김정우 */
 .program img {
   width: 150px;
