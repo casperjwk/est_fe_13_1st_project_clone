@@ -108,14 +108,12 @@ hr {
 
 /* 헤더 - 홍길동 */
 
-
-
 /* 푸터 링크 - 김소영 */
 .footer-link {
   font-size: var(--caption);
   color: var(--text-inactive);
-   text-decoration: none;
-   transition: 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .footer-link:hover {
