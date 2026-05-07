@@ -108,3 +108,56 @@ hr {
 
 /* 헤더 - 홍길동 */
 /* 푸터 - 변사또 */
+
+/* FAQ */
+.faq {
+  width: 1000px;
+  margin: 0 auto;
+}
+.faqlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faqlist div.active .question span {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+.faqlist .question {
+  display: flex;
+  height: 80px;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-light);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: var(--body-l);
+  box-shadow: #00000025 4px 4px 4px;
+}
+.faqlist .question span {
+  opacity: 0.2;
+  color: #000;
+  transition: 0.35s;
+}
+.faqlist .answer {
+  display: flex;
+  height: 0;
+  padding: 0 40px;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  transition: 0.35s;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--white);
+}
+.faqlist div.active .question {
+  border-radius: 10px 10px 0 0;
+  background: var(--primary-hover);
+}
+.faqlist div.active .answer {
+  height: 120px;
+  padding: 20px 40px 30px;
+  box-shadow: #00000025 4px 4px 4px;
+}
