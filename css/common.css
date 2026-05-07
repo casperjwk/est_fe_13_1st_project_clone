@@ -33,7 +33,9 @@
 }
 
 body {
-  font-family: "Pretendard", sans-serif;
+  font:
+    var(--base-font)/var(--base-unit) "Pretendard",
+    sans-serif;
 }
 
 /* 타이포그래피 */
@@ -104,7 +106,117 @@ hr {
   background: var(--text-inactive);
 }
 
-/* 버튼 */
+/* 링크 버튼 */
+.btn {
+  position: relative;
+  display: inline-flex;
+  background: var(--gradient-button);
+  color: var(--background);
+  align-items: center;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: 700;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.btn > * {
+  position: relative;
+  z-index: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--gradient);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 0;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.arrow {
+  transition: 0.3s;
+}
+.btn:hover .arrow {
+  transform: translateX(10px);
+}
+
+.btn-small {
+  height: 54px;
+  gap: 5px;
+  padding: 0 36px;
+  border-radius: 100px;
+}
+.btn-big {
+  height: 72px;
+  gap: 10px;
+  padding: 0 36px;
+  border-radius: 100px;
+  font-size: var(--body-l);
+}
+.btn-rec {
+  height: 72px;
+  gap: 10px;
+  padding: 0 55px;
+  border-radius: 15px;
+  font-size: var(--body-l);
+}
+
+.btn-detail {
+  display: inline-flex;
+  background: var(--background);
+  color: var(--text-sub);
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: var(--body-l);
+  border: 1px solid var(--dark-accent2);
+  border-radius: 15px;
+  height: 72px;
+  padding: 0 28px;
+}
+.btn-detail:hover {
+  background: var(--text-sub);
+  color: var(--background);
+}
+
+.sticky {
+  display: flex;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(var(--base-unit) * 2.5);
+  padding: 0 57px;
+  gap: 10px;
+  border: 1px solid var(--dark-accent1);
+  border-radius: 100px;
+  align-items: center;
+  text-align: center;
+  font-size: var(--body-l);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.sticky > span {
+  font-size: 30px;
+}
+.sticky .circle3px {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background: var(--dark-accent1);
+  opacity: 50%;
+}
+.btn-sticky {
+  height: calc(var(--base-unit) * 1.5);
+  gap: 15px;
+  padding: 0 40px;
+  font-size: 21px;
+  border-radius: 100px;
+  box-shadow: none;
+}
 
 /* 헤더 - 홍길동 */
 /* 푸터 - 변사또 */
