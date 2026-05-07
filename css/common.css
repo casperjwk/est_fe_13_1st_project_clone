@@ -107,4 +107,18 @@ hr {
 /* 버튼 */
 
 /* 헤더 - 홍길동 */
-/* 푸터 - 변사또 */
+
+
+
+/* 푸터 링크 - 김소영 */
+.footer-link {
+  font-size: var(--caption);
+  color: var(--text-inactive);
+   text-decoration: none;
+   transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
