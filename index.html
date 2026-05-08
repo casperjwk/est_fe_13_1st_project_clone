@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이스트캠프 | 프론트엔드 14기</title>
     <link
-      rel="stylesheet"
+      rel="preload"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/flex-utility.css">
+    <link rel="stylesheet" href="css/flex-utility.css" />
   </head>
   <body>
     <!-- 김찬희 -->
@@ -43,9 +43,7 @@
       <!-- 최정원 -->
       <section class="benefit inner-pd">
         <div class="container d-flex flex-column align-items-center justify-content-center g-3">
-          <h2 class="hidden">혜택</h2>
-          <h3 class="hidden">이스트캠프 혜택</h3>
-          <h4 class="text-heading4">이스트캠프만의 특별한 혜택</h4>
+          <h2 class="text-heading4">이스트캠프만의 특별한 혜택</h2>
           <div class="benefit-cards">
             <ul class="d-flex justify-content-between text-center">
               <li>
@@ -92,9 +90,7 @@
       </section>
       <section class="result d-flex flex-column inner-pd">
         <div class="container d-flex flex-column align-items-center justify-content-center g-3">
-          <h2 class="hidden">결과</h2>
-          <h3 class="hidden">이스트캠프 성과</h3>
-          <h4 class="text-heading4">숫자가 증명합니다</h4>
+          <h2 class="text-heading4">숫자가 증명합니다</h2>
           <ul class="resultList d-flex justify-content-between text-center">
             <li class="d-flex flex-column g-1">
               <p class="text-heading4">87%</p>
@@ -117,7 +113,7 @@
         <div
           class="company-slide-wrap container d-flex flex-column align-items-center justify-content-center g-3"
         >
-          <h5 class="text-heading5">수료생 주요 취업 현황</h5>
+          <h3 class="text-heading5">수료생 주요 취업 현황</h3>
           <div class="companySlide d-flex">
             <img src="images/Slide_EST.png" alt="EST" />
             <img src="images/Slide_ESTSecurity.png" alt="EST Security" />
@@ -218,20 +214,165 @@
         </div>
       </section>
       <!-- /김윤수 -->
+
       <!-- 김소영 -->
+      <!-- 회사 소개 -->
       <section class="company">
         <div class="container">
-          <h2>회사 소개</h2>
+          <h2 class="text-heading4">이스트소프트의 길</h2>
+
+          <div class="company-list">
+            <div class="company-item">
+              <h3 class="text-heading6">
+                <span class="year">1994년</span>
+                이스트소프트 설립
+              </h3>
+              <p class="text-body-m">
+                창업자 김장중 전 대표의 한국 IT 대중화를 목표로 한 개발 철학 아래, 유틸리티
+                소프트웨어 중심의 이스트소프트가 설립되었습니다.
+              </p>
+            </div>
+
+            <div class="company-item">
+              <h3 class="text-heading6">
+                <span class="year">1999년</span>
+                알집 출시 및 사업 시작
+              </h3>
+              <p class="text-body-m">
+                국내 대표 압축 프로그램 ‘알집’이 출시되며 대중적인 소프트웨어 벤처 기업으로 성장의
+                기반을 마련했습니다.
+              </p>
+            </div>
+
+            <div class="company-item">
+              <h3 class="text-heading6">
+                <span class="year">2010년대</span>
+                알툴즈 시작
+              </h3>
+              <p class="text-body-m">
+                알FTP, 알씨, 알송 등 다양한 유틸리티를 통합한 ‘알툴즈’가 출시되며 국민 소프트웨어
+                브랜드로 자리잡기 시작했습니다.
+              </p>
+            </div>
+
+            <div class="company-item">
+              <h3 class="text-heading6">
+                <span class="year">2020년대</span>
+                AI 전환 및 서비스 고도화
+              </h3>
+              <p class="text-body-m">
+                AI 휴먼, LLM, AI 서비스 플랫폼을 중심으로 기존 유틸리티 기업에서 AI 기반 기술
+                기업으로 전환했습니다.
+              </p>
+            </div>
+
+            <div class="company-item">
+              <h3 class="text-heading6">
+                <span class="year">2026년</span>
+                AI 플랫폼 기업 완전 도약
+              </h3>
+              <p class="text-body-m">
+                이스트소프트는 유틸리티 중심 기업을 넘어 AI 플랫폼 기업으로 전환하며 AI를 산업과
+                생활 전반에 이식하는 기술 혁신을 선도하고 있습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- 강사진 소개 -->
       <section class="lecturer">
         <div class="container">
-          <h2>강사진 소개</h2>
+          <h2 class="text-heading4">최고의 강사진이 기다리고 있습니다.</h2>
+
+          <div class="instructor-list">
+            <div class="instructor-card">
+              <img src="./images/lecturer_1.png" alt="김태훈 강사 프로필" />
+              <div class="instructor-text">
+                <h3 class="text-heading6 instructor-name">김태훈</h3>
+                <h4 class="text-heading6 instructor-role">수석 강사</h4>
+              </div>
+              <div class="text-body-m instructor-info">
+                <p>전 네이버 프론트엔드 개발자</p>
+                <p>서울대학교 컴퓨터공학 석사</p>
+                <p>10년차 React 전문가</p>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <img src="./images/lecturer_2.png" alt="이지은 강사 프로필" />
+              <div class="instructor-text">
+                <h3 class="text-heading6 instructor-name">이지은</h3>
+                <h4 class="text-heading6 instructor-role">프론트엔드 강사</h4>
+              </div>
+              <div class="text-body-m instructor-info">
+                <p>전 카카오 프론트엔드 개발자</p>
+                <p>연세대학교 컴퓨터과학 학사</p>
+                <p>UI / UX 전문가</p>
+              </div>
+            </div>
+            <div class="instructor-card">
+              <img src="./images/lecturer_3.png" alt="박성민 강사 프로필" />
+              <div class="instructor-text">
+                <h3 class="text-heading6 instructor-name">박성민</h3>
+                <h4 class="text-heading6 instructor-role">프로젝트 멘토</h4>
+              </div>
+              <div class="text-body-m instructor-info">
+                <p>전 라인 프론트엔드 팀장</p>
+                <p>고려대학교 소프트웨어학 석사</p>
+                <p>풀스택 전문가</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="FAQ">
         <div class="container">
-          <h2>자주 묻는 질문 FAQ</h2>
+          <div class="faq-header">
+            <h2 class="text-heading4">자주 묻는 질문</h2>
+            <p class="text-caption">궁금한 점이 있으신가요?</p>
+          </div>
+          <div class="faq-list">
+            <!-- 질문 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4 class="text-body-l">
+                  Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
+                </h4>
+                <span class="material-icons">expand_more</span>
+              </button>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4 class="text-body-l">Q. 학교, 직장 등과 병행이 가능한가요?</h4>
+                <span class="material-icons">expand_more</span>
+              </button>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4 class="text-body-l">Q. 지원 자격이 있나요?</h4>
+                <span class="material-icons">expand_more</span>
+              </button>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4 class="text-body-l">Q. 다른기관에서 교육을 받았는데 신청 가능할까요?</h4>
+                <span class="material-icons">expand_more</span>
+              </button>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                <h4 class="text-body-l">Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</h4>
+                <span class="material-icons">expand_more</span>
+              </button>
+            </div>
+            <!-- 답변 -->
+            <!-- js 가능 시 구현 -->
+            <!-- <div class="faq-answer">
+                <p class="text-caption">
+                  저희는 사전 설문 내용을 토대로 지원자분들의 사전 지식을 고려하여 커리큘럼을 구성하고 있습니다. 기존 다수의 비전공자분들 교육 경험을 바탕으로 강사진과 운영진이 더욱 세심한 관리와 교육으로 여러분의 걱정을 덜어 드리겠습니다
+                </p>
+              </div> -->
+          </div>
         </div>
       </section>
       <section class="CTA">
