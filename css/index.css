@@ -10,9 +10,11 @@
 .benefit {
   background: var(--background);
 }
+
 .benefit-cards {
   width: 100%;
 }
+
 .benefit-cards ul li {
   display: flex;
   flex-direction: column;
@@ -25,43 +27,54 @@
   gap: 24px;
   transition: 0.3s;
 }
+
 .benefit-icon span {
   color: var(--primary-main);
   font-size: calc(var(--base-font) * 3);
 }
+
 .benefit-cards .text-body-m {
   width: 250px;
   height: 80px;
   word-break: keep-all;
 }
+
 .benefit-cards ul li:nth-child(3) .text-body-m {
   width: 196px;
 }
+
 .benefit-cards ul li:last-child .text-body-m {
   width: 201px;
 }
+
 .benefit-cards ul li:hover {
   transform: translateY(-4px);
   box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.1);
 }
+
 /* 메인 : 결과 - 최정원 */
 .result {
   gap: calc(var(--base-unit) * 4);
   background: var(--dark-accent2);
 }
-.result .container > .text-heading4,
-.result .container > .text-heading5 {
+
+.result .container>.text-heading4,
+.result .container>.text-heading5 {
   color: var(--background);
 }
+
 .resultList {
   width: 100%;
 }
+
 .resultList li {
   width: 250px;
 }
+
 .resultList li .text-heading4 {
   color: var(--primary-main);
 }
+
 .resultList li .text-body-l {
   color: var(--background);
 }
@@ -69,11 +82,13 @@
 .company-slide-wrap {
   overflow: hidden;
 }
+
 .companySlide {
   gap: 20px;
   width: 100%;
   animation: Slide 20s linear infinite;
 }
+
 .companySlide img {
   height: 70px;
   width: auto;
@@ -82,15 +97,50 @@
   background: var(--background);
   border-radius: 10px;
 }
+
 @keyframes Slide {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-100% - 330px));
   }
 }
+
 /* 메인 : 수강생 후기 - 김윤수 */
+
+.student-profile {
+  width: 300px;
+  height: 360px;
+  background: var(--primary-light-20);
+  gap: 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px hex(#000 25%);
+}
+
+.scope-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scope-head span {
+  color: var(--primary-main);
+}
+
+
+.student-comment {
+  display: block;
+  width: 300px;
+  height: 150px;
+}
+
+.student-name {}
 
 /* 메인 : 프로세스 - 김윤수 */
 
