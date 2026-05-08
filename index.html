@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이스트캠프 | 프론트엔드 14기</title>
-    <link
-      rel="preload"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
-    />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -596,62 +590,78 @@
           </div>
         </div>
       </section>
-      <section class="FAQ">
+
+      <section class="faq">
         <div class="container">
           <div class="faq-header text-center">
             <h2 class="text-heading4">자주 묻는 질문</h2>
             <p class="text-caption">궁금한 점이 있으신가요?</p>
           </div>
-          <div class="faq-list d-flex flex-column align-items-center g-1">
-            <!-- 질문 -->
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h4 class="text-body-l">
-                  Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
-                </h4>
-                <span class="material-icons">expand_more</span>
-              </button>
+
+          <div class="faq-list">
+            <!-- 질문 1 -->
+            <div class="faq-item">
+              <h4 class="faq-question text-body-l">
+                Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
+                <span class="material-icons-outlined">expand_more</span>
+              </h4>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h4 class="text-body-l">Q. 학교, 직장 등과 병행이 가능한가요?</h4>
-                <span class="material-icons">expand_more</span>
-              </button>
+
+            <!-- 질문 2 -->
+            <div class="faq-item">
+              <h4 class="faq-question text-body-l">
+                Q. 학교, 직장 등과 병행이 가능한가요?
+                <span class="material-icons-outlined">expand_more</span>
+              </h4>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h4 class="text-body-l">Q. 지원 자격이 있나요?</h4>
-                <span class="material-icons">expand_more</span>
-              </button>
+
+            <!-- 질문 3 -->
+            <div class="faq-item">
+              <h4 class="faq-question text-body-l">
+                Q. 지원 자격이 있나요?
+                <span class="material-icons-outlined expand_more">expand_more</span>
+              </h4>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h4 class="text-body-l">Q. 다른기관에서 교육을 받았는데 신청 가능할까요?</h4>
-                <span class="material-icons">expand_more</span>
-              </button>
+
+            <!-- 질문 4 -->
+            <div class="faq-item">
+              <h4 class="faq-question text-body-l">
+                Q. 다른기관에서 교육을 받았는데 신청 가능할까요?
+                <span class="material-icons-outlined expand_more">expand_more</span>
+              </h4>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h4 class="text-body-l">Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</h4>
-                <span class="material-icons">expand_more</span>
-              </button>
+
+            <!-- 질문 5 -->
+            <div class="faq-item">
+              <h4 class="faq-question text-body-l">
+                Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?
+                <span class="material-icons-outlined expand_more">expand_more</span>
+              </h4>
             </div>
-            <!-- 답변 -->
-            <!-- js 가능 시 구현 -->
-            <!-- <div class="faq-answer">
-                <p class="text-caption">
-                  저희는 사전 설문 내용을 토대로 지원자분들의 사전 지식을 고려하여 커리큘럼을 구성하고 있습니다. 기존 다수의 비전공자분들 교육 경험을 바탕으로 강사진과 운영진이 더욱 세심한 관리와 교육으로 여러분의 걱정을 덜어 드리겠습니다
-                </p>
-              </div> -->
           </div>
         </div>
       </section>
-      <section class="CTA">
-        <div class="container">
-          <div class="cta-content align-items-center">
 
+      <section class="cta">
+        <div class="container d-flex flex-column">
+          <div class="cta-content align-items-center text-center">
+            <p class="ta-label">2026년 하반기 모집 중 · 선착순 마감</p>
+
+            <h2 class="cta-title">
+              <span>지금 시작</span>하지 않으면,<br />
+              <span>다음 기회</span>를 기다려야 합니다.
+            </h2>
+
+            <div class="cta-button d-flex items-center">
+              <a href="#" class="btn btn-big">
+                <span>무료로 지원하기</span>
+              </a>
+              <a href="#" class="btn btn-big">
+                <span>상담 예약하기</span>
+              </a>
+            </div>
+            <h2>행동 유도 영역</h2>
           </div>
-          <h2>행동 유도 영역</h2>
         </div>
       </section>
     </main>
