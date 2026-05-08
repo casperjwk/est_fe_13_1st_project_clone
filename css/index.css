@@ -1,4 +1,28 @@
 /* 헤더 - 김찬희 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: calc(var(--base-unit) * 0.28);
+  background: var(--background);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.nav-cta a {
+  text-transform: uppercase;
+}
+.nav-btn {
+  margin-left: 233.75px;
+}
+.hero {
+  background: var(--background);
+}
 
 /* 메인 : 히어로 - 김찬희 */
 
