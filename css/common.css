@@ -1,3 +1,8 @@
+/* 모든 페이지에 공통 적용할 스타일 */
+@import url(./normalize.css);
+@import url(./reset.css);
+@import url(./flex-utility.css);
+
 :root {
   /* 최상위 선택자 */
   /* 레이아웃 */
@@ -5,21 +10,24 @@
   --base-font: 16px;
 
   /* 색상 스타일 */
-  --gradient: linear-gradient(to bottom, #1dcf6f, #3b82f6);
-  --gradient-hero: linear-gradient(to bottom, #f7f9fa, #6ee7a8);
-  --gradient-button: linear-gradient(to right, #1dcf6f, #3b82f6);
-  --gradient-logo: linear-gradient(135deg, #1dcf6f, #3b82f6);
-  --primary-main: #1dcf6f;
-  --primary-light: #6ee7a8;
-  --primary-hover: #17b960;
-  --text-main: #111827;
-  --text-sub: #4b5563;
-  --text-inactive: #9ca3af;
-  --background: #f7f9fa;
-  --dark-accent1: #0f172a;
-  --dark-accent2: #1f2937;
-  --white: #fff;
-  --black: #000;
+  --gradient: linear-gradient(to bottom, rgba(29, 207, 111, 1), rgba(59, 130, 246, 1));
+  --gradient-hero: linear-gradient(to bottom, rgba(247, 249, 250, 1), rgba(110, 231, 168, 1));
+  --gradient-button: linear-gradient(to right, rgba(29, 207, 111, 1), rgba(59, 130, 246, 1));
+  --gradient-logo: linear-gradient(135deg, rgba(29, 207, 111, 1), rgba(59, 130, 246, 1));
+  --primary-main: rgba(29, 207, 111, 1);
+  --primary-light: rgba(110, 231, 168, 1);
+  --primary-hover: rgba(23, 185, 96, 1);
+  --text-main: rgba(17, 24, 39, 1);
+  --text-sub: rgba(75, 85, 99, 1);
+  --text-inactive: rgba(156, 163, 175, 1);
+  --background: rgba(247, 249, 250, 1);
+  --dark-accent1: rgba(15, 23, 42, 1);
+  --dark-accent2: rgba(31, 41, 55, 1);
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --primary-light-20: rgba(110, 231, 168, 0.2);
+  --primary-light-50: rgba(110, 231, 168, 0.5);
+  --dark-accent1-50: rgba(15, 23, 42, 0.5);
 
   /* 텍스트 사이즈 스타일 */
   --h2: calc(var(--base-font) * 6);

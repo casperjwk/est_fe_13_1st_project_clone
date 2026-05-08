@@ -1,3 +1,105 @@
-/* 메인 컨텐츠 - 이도령 */
+/* 헤더 - 김찬희 */
 
-/* 후기 섹션 - 성춘향 */
+/* 메인 : 히어로 - 김찬희 */
+
+/* 메인 : 문제 제기 - 김정우 */
+
+/* 메인 : 프로그램 소개 - 김정우 */
+
+/* 메인 : 혜택 - 최정원 */
+.benefit {
+  background: var(--background);
+}
+.benefit-cards {
+  width: 100%;
+}
+.benefit-cards ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 320px;
+  background: var(--primary-light-50);
+  border-radius: 10px;
+  gap: 24px;
+  transition: 0.3s;
+}
+.benefit-icon span {
+  color: var(--primary-main);
+  font-size: calc(var(--base-font) * 3);
+}
+.benefit-cards .text-body-m {
+  width: 250px;
+  height: 80px;
+  word-break: keep-all;
+}
+.benefit-cards ul li:nth-child(3) .text-body-m {
+  width: 196px;
+}
+.benefit-cards ul li:last-child .text-body-m {
+  width: 201px;
+}
+.benefit-cards ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.1);
+}
+/* 메인 : 결과 - 최정원 */
+.result {
+  gap: calc(var(--base-unit) * 4);
+  background: var(--dark-accent2);
+}
+.result .container > .text-heading4,
+.result .container > .text-heading5 {
+  color: var(--background);
+}
+.resultList {
+  width: 100%;
+}
+.resultList li {
+  width: 250px;
+}
+.resultList li .text-heading4 {
+  color: var(--primary-main);
+}
+.resultList li .text-body-l {
+  color: var(--background);
+}
+
+.company-slide-wrap {
+  overflow: hidden;
+}
+.companySlide {
+  gap: 20px;
+  width: 100%;
+  animation: Slide 20s linear infinite;
+}
+.companySlide img {
+  height: 70px;
+  width: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--background);
+  border-radius: 10px;
+}
+@keyframes Slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 330px));
+  }
+}
+/* 메인 : 수강생 후기 - 김윤수 */
+
+/* 메인 : 프로세스 - 김윤수 */
+
+/* 메인 : 회사소개 - 김소영 */
+
+/* 메인 : 강사진 소개 - 김소영 */
+
+/* 메인 : FAQ - 김소영 */
+
+/* 메인 : CTA - 김소영 */
+
+/* 푸터- 김소영 */
