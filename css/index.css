@@ -11,7 +11,7 @@
 .problem > .container {
   gap: 120px;
 }
-.title {
+.problem > .title {
   width: 700px;
   height: 100px;
   gap: 16px;
@@ -43,6 +43,211 @@ li > h3 {
   justify-content: center;
 }
 /* 메인 : 프로그램 소개 - 김정우 */
+.program {
+  padding: 96px 0;
+  background-color: var(--background);
+}
+.program > .container {
+  gap: 32px;
+  padding: 64px 0;
+}
+.program > .title {
+  height: 450px;
+  gap: 16px;
+  padding: 100px;
+}
+
+.program-list {
+  gap: 32px;
+}
+/* 전체 진행 영역 */
+.progress {
+  width: 800px;
+  height: 80px;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+/* 전체 점선 */
+.progress::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  border-top: 2px dashed #4b5563;
+  z-index: 0;
+}
+
+/* active 된 구간 점선 */
+.progress::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: calc((100% - 30px) / 3);
+  border-top: 2px dashed #8ee6b8;
+  z-index: 1;
+}
+
+/* 각 단계 li */
+.progress > li {
+  position: relative;
+  z-index: 2;
+  list-style: none;
+}
+
+/* 안쪽 ul */
+.progress-dot {
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 기본 원 */
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--dark-accent2);
+  box-shadow: 0 0 0 6px rgba(47, 59, 79, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 작은 원 */
+.circle.small {
+  width: 16px;
+  height: 16px;
+  margin-top: 7px;
+}
+
+/* active 된 원 */
+.progress > li.active .circle {
+  background-color: var(--primary-light);
+  box-shadow: 0 0 0 7px rgba(104, 217, 158, 0.3);
+}
+
+/* 글자 */
+.text-caption {
+  list-style: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.list-decoration {
+  list-style: disc;
+  padding-right: 50px;
+}
+.sliderwrap {
+  position: relative;
+  width: 801px;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* 바깥 ul */
+.slidercontainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 실제 슬라이드들이 가로로 나열되는 부분 */
+.slidercontainer > li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* 두 번째 슬라이드가 보이도록 왼쪽으로 이동 */
+  transform: translateX(-800px);
+}
+
+/* 슬라이드 한 장 */
+.slider {
+  flex: 0 0 800px;
+  width: 800px;
+  height: 330px;
+  gap: 16px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-content {
+  width: 800px;
+  height: 258px;
+  border: 1px solid var(--primary-light);
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-content img {
+  width: 200px;
+  height: auto;
+}
+
+.divider {
+  height: 169px;
+  border: none;
+  padding: 0 32px;
+  border-left: 1px solid var(--primary-light);
+}
+
+/* 좌우 버튼 */
+.slider-button {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+
+  width: 32px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--primary-light);
+  color: var(--text-main);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  padding: 0;
+}
+
+.slider-button.prev {
+  left: 16px;
+}
+
+.slider-button.next {
+  right: 16px;
+}
+
+.slider-button .material-icons {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.slider-button:hover {
+  background-color: var(--primary-hover);
+}
 
 /* 메인 : 혜택 - 최정원 */
 
