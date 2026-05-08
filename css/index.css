@@ -29,8 +29,6 @@
   text-align: center;
 }
 .question-list {
-  width: 200px;
-  height: 300px;
   gap: 20px;
   padding: 10px;
 }
