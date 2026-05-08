@@ -41,7 +41,9 @@
 }
 
 body {
-  font-family: "Pretendard", sans-serif;
+  font:
+    var(--base-font)/var(--base-unit) "Pretendard",
+    sans-serif;
 }
 
 /* 타이포그래피 */
