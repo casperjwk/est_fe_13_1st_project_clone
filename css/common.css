@@ -122,6 +122,7 @@ hr {
   border: none;
   height: 1px;
   background: var(--text-inactive);
+  margin: 0;
 }
 
 .hidden {

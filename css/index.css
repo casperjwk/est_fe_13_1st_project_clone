@@ -32,7 +32,7 @@
   gap: 20px;
   padding: 10px;
 }
-li > h3 {
+.question-list li > h3 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -41,6 +41,9 @@ li > h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.question-list li > h3 span {
+  font-size: var(--base-unit);
 }
 /* 메인 : 프로그램 소개 - 김정우 */
 .program {
@@ -135,7 +138,7 @@ li > h3 {
 }
 
 /* 글자 */
-.text-caption {
+.progress-dot .text-caption {
   list-style: none;
   font-size: 12px;
   white-space: nowrap;
@@ -144,6 +147,7 @@ li > h3 {
 .list-decoration {
   list-style: disc;
   padding-right: 50px;
+  color: var(--text-sub);
 }
 .sliderwrap {
   position: relative;
