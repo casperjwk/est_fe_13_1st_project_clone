@@ -19,15 +19,15 @@
 }
 
 .g-1 {
-  gap: calc(var(--base-unit) * 0.5);
+  gap: calc(var(--base-unit) * 0.5); /* 32 */
 }
 
 .g-2 {
-  gap: var(--base-unit);
+  gap: var(--base-unit); /* 64 */
 }
 
 .g-3 {
-  gap: calc(var(--base-unit) * 2);
+  gap: calc(var(--base-unit) * 2); /* 96 */
 }
 
 .text-center {
