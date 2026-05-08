@@ -4,7 +4,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   padding: calc(var(--base-unit) * 0.28);
   background: var(--background);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -249,7 +249,7 @@ nav ul li a {
 .slider-button {
   position: absolute;
   top: 0;
-  z-index: 20;
+  z-index: 2;
 
   width: 32px;
   height: 28px;
@@ -460,24 +460,13 @@ nav ul li a {
   background: var(--dark-accent1);
 }
 .company .container {
-  display: flex;
-  flex-direction: column;
   gap: 80px;
 }
 .company h2 {
-  text-align: center;
   color: var(--white);
 }
 .company-item h3 {
   color: var(--white);
-}
-.company-list {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
-.company-item {
-  gap: 8px;
 }
 .year {
   color: var(--primary-main);
@@ -491,26 +480,16 @@ nav ul li a {
   background: var(--dark-accent1);
 }
 .lecturer .container {
-  display: flex;
-  flex-direction: column;
   gap: 80px;
 }
 .lecturer h2 {
-  text-align: center;
   color: var(--white);
 }
 .instructor-list {
-  display: flex;
-  justify-content: space-between;
   height: 760px;
 }
 .instructor-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 33px;
   padding: 10px 0;
-  text-align: center;
 }
 .instructor-name,
 .instructor-info p {
@@ -524,9 +503,6 @@ nav ul li a {
   background: var(--background);
   padding: 96px 0;
 }
-.faq-header {
-  text-align: center;
-}
 .faq-header h2 {
   color: var(--text-main);
 }
@@ -534,26 +510,16 @@ nav ul li a {
   color: var(--text-sub);
 }
 .faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
   margin: 48px auto 0;
-  align-items: center;
 }
 .faq-item {
   width: 1000px;
   height: 80px;
   background: var(--primary-light);
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .faq-question {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 30px 40px;
   cursor: pointer;
 }
