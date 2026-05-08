@@ -10,21 +10,24 @@ header {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 nav ul {
-  display: flex;
-  justify-content: center;
   gap: 50px;
+}
+nav ul li a {
+  font-weight: bold;
 }
 .nav-cta a {
   text-transform: uppercase;
 }
 .nav-btn {
-  margin-left: 233.75px;
-}
-.hero {
-  background: var(--background);
+  width: 174px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* 메인 : 히어로 - 김찬희 */
+.hero {
+  background: var(--background);
+}
 
 /* 메인 : 문제 제기 - 김정우 */
 
