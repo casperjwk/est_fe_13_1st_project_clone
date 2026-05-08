@@ -18,12 +18,60 @@
   <body>
     <!-- 김찬희 -->
     <header>
-      <h1>Logo</h1>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1>
+          <a href="index.html">
+            <img src="images/Logo.png" alt="EST logo" />
+            <span class="hidden">Logo</span>
+          </a>
+        </h1>
+        <nav>
+          <ul class="d-flex align-items-center text-body-m">
+            <li>
+              <a href="" class="nav-link active">커리큘럼</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">취업성과</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">수강후기</a>
+            </li>
+            <li class="nav-cta">
+              <a href="" class="nav-link">faq</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-btn">
+          <a href="" class="btn btn-small">
+            <span>무료 신청하기</span>
+            <span class="material-icons arrow">arrow_forward</span>
+          </a>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero inner-pd">
+        <!-- < class="container d-flex flex-column align-items-center g-1"> -->
         <div class="container">
-          <h2>Hero</h2>
+          <span>2025년 하반기 모집 중 &middot; 선착순 마감</span>
+          <h2>
+            비전공자도,
+            <br />
+            4개월이면
+            <br />
+            <span>프론트엔드</span> 취업
+          </h2>
+          <p>실무 중심 커리큘럼과 1:1 멘토링으로</p>
+          <p>취업까지 이어지는 집중 부트캠프</p>
+          <div>
+            <a href="" class="btn btn-rec">
+              <span>지원하기</span>
+            </a>
+            <a href="" class="btn-detail">
+              <span>프로그램 살펴보기</span>
+            </a>
+            <img src="images/hero.png" alt="" />
+          </div>
         </div>
       </section>
       <!-- /김찬희 -->
@@ -355,9 +403,7 @@
       <!-- 김윤수 -->
       <section class="review d-flex flex-column inner-pd g-3">
         <div class="container d-flex flex-column align-items-center justify-content-center g-1">
-          <h2 class="hidden">후기</h2>
-          <h3 class="hidden">수강생 후기</h3>
-          <h4 class="text-heading4">실제 수강생들의 후기</h4>
+          <h2 class="text-heading4">실제 수강생들의 후기</h2>
           <p class="text-caption">그들도 처음에는 코드 한 줄 몰랐습니다</p>
         </div>
         <div class="container d-flex align-items-center justify-content-between">
@@ -407,9 +453,7 @@
       <section class="process inner-pd">
         <div class="container d-flex flex-column align-items-center justify-content-center">
           <div class="container process_area g-1">
-            <h2 class="hidden">프로세스</h2>
-            <h3 class="hidden">지원 프로세스</h3>
-            <h4 class="text-heading4">단계별 지원 프로세스</h4>
+            <h2 class="text-heading4">단계별 지원 프로세스</h2>
             <p class="text-caption">3단계로 구성된 전문 프로세스</p>
           </div>
           <div class="container process_area g-2">
@@ -445,10 +489,10 @@
       <!-- 김소영 -->
       <!-- 회사 소개 -->
       <section class="company">
-        <div class="container">
-          <h2 class="text-heading4">이스트소프트의 길</h2>
+        <div class="container d-flex flex-column">
+          <h2 class="text-heading4 text-center">이스트소프트의 길</h2>
 
-          <div class="company-list">
+          <div class="company-list d-flex flex-column g-2">
             <div class="company-item">
               <h3 class="text-heading6">
                 <span class="year">1994년</span>
@@ -509,11 +553,11 @@
 
       <!-- 강사진 소개 -->
       <section class="lecturer">
-        <div class="container">
-          <h2 class="text-heading4">최고의 강사진이 기다리고 있습니다.</h2>
+        <div class="container d-flex flex-column">
+          <h2 class="text-heading4 text-center">최고의 강사진이 기다리고 있습니다.</h2>
 
-          <div class="instructor-list">
-            <div class="instructor-card">
+          <div class="instructor-list d-flex text-center justify-content-between">
+            <div class="instructor-card d-flex flex-column align-items-center g-1">
               <img src="./images/lecturer_1.png" alt="김태훈 강사 프로필" />
               <div class="instructor-text">
                 <h3 class="text-heading6 instructor-name">김태훈</h3>
@@ -525,7 +569,7 @@
                 <p>10년차 React 전문가</p>
               </div>
             </div>
-            <div class="instructor-card">
+            <div class="instructor-card d-flex flex-column align-items-center g-1">
               <img src="./images/lecturer_2.png" alt="이지은 강사 프로필" />
               <div class="instructor-text">
                 <h3 class="text-heading6 instructor-name">이지은</h3>
@@ -537,7 +581,7 @@
                 <p>UI / UX 전문가</p>
               </div>
             </div>
-            <div class="instructor-card">
+            <div class="instructor-card d-flex flex-column align-items-center g-1">
               <img src="./images/lecturer_3.png" alt="박성민 강사 프로필" />
               <div class="instructor-text">
                 <h3 class="text-heading6 instructor-name">박성민</h3>
@@ -554,40 +598,40 @@
       </section>
       <section class="FAQ">
         <div class="container">
-          <div class="faq-header">
+          <div class="faq-header text-center">
             <h2 class="text-heading4">자주 묻는 질문</h2>
             <p class="text-caption">궁금한 점이 있으신가요?</p>
           </div>
-          <div class="faq-list">
+          <div class="faq-list d-flex flex-column align-items-center g-1">
             <!-- 질문 -->
-            <div class="faq-item">
-              <button class="faq-question">
+            <div class="faq-item d-flex align-items-center justify-content-between">
+              <button class="faq-question d-flex align-items-center justify-content-between">
                 <h4 class="text-body-l">
                   Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
                 </h4>
                 <span class="material-icons">expand_more</span>
               </button>
             </div>
-            <div class="faq-item">
-              <button class="faq-question">
+            <div class="faq-item d-flex align-items-center justify-content-between">
+              <button class="faq-question d-flex align-items-center justify-content-between">
                 <h4 class="text-body-l">Q. 학교, 직장 등과 병행이 가능한가요?</h4>
                 <span class="material-icons">expand_more</span>
               </button>
             </div>
-            <div class="faq-item">
-              <button class="faq-question">
+            <div class="faq-item d-flex align-items-center justify-content-between">
+              <button class="faq-question d-flex align-items-center justify-content-between">
                 <h4 class="text-body-l">Q. 지원 자격이 있나요?</h4>
                 <span class="material-icons">expand_more</span>
               </button>
             </div>
-            <div class="faq-item">
-              <button class="faq-question">
+            <div class="faq-item d-flex align-items-center justify-content-between">
+              <button class="faq-question d-flex align-items-center justify-content-between">
                 <h4 class="text-body-l">Q. 다른기관에서 교육을 받았는데 신청 가능할까요?</h4>
                 <span class="material-icons">expand_more</span>
               </button>
             </div>
-            <div class="faq-item">
-              <button class="faq-question">
+            <div class="faq-item d-flex align-items-center justify-content-between">
+              <button class="faq-question d-flex align-items-center justify-content-between">
                 <h4 class="text-body-l">Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</h4>
                 <span class="material-icons">expand_more</span>
               </button>
@@ -603,7 +647,12 @@
         </div>
       </section>
       <section class="CTA">
-        <div class="container"><h2>행동 유도 영역</h2></div>
+        <div class="container">
+          <div class="cta-content align-items-center">
+
+          </div>
+          <h2>행동 유도 영역</h2>
+        </div>
       </section>
     </main>
     <footer>
