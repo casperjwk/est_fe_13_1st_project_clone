@@ -1,6 +1,33 @@
 /* 헤더 - 김찬희 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: calc(var(--base-unit) * 0.28);
+  background: var(--background);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  gap: 50px;
+}
+nav ul li a {
+  font-weight: bold;
+}
+.nav-cta a {
+  text-transform: uppercase;
+}
+.nav-btn {
+  width: 174px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
 
 /* 메인 : 히어로 - 김찬희 */
+.hero {
+  background: var(--background);
+}
 
 /* 메인 : 문제 제기 - 김정우 */
 .problem {
