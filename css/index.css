@@ -95,7 +95,36 @@
 /* 메인 : 프로세스 - 김윤수 */
 
 /* 메인 : 회사소개 - 김소영 */
-
+.company {
+  padding: 96px 0;
+  background: var(--dark-accent1);
+}
+.company .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.company h2 {
+  text-align: center;
+  color: var(--white);
+}
+.company-item h6 {
+  color: var(--white);
+}
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.company-item {
+  gap: 8px;
+}
+.year {
+  color: var(--primary-main);
+}
+.company-item p {
+  color: var(--white);
+}
 /* 메인 : 강사진 소개 - 김소영 */
 
 /* 메인 : FAQ - 김소영 */
