@@ -272,36 +272,31 @@ hr {
 
 /* FAQ - 김정우 */
 .faq {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
-.faqlist {
+.faq-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 32px;
 }
-.faqlist div.active .question span {
-  opacity: 1;
-  transform: rotate(180deg);
-}
-.faqlist .question {
+.faq-question {
+  width: 100%;
   display: flex;
-  height: 80px;
-  padding: 0 40px;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  padding: 0 40px;
   background: var(--primary-light);
   cursor: pointer;
-  border-radius: 10px;
-  font-size: var(--body-l);
   box-shadow: #00000025 4px 4px 4px;
 }
-.faqlist .question span {
+.faq-question span {
   opacity: 0.2;
   color: #000;
   transition: 0.35s;
 }
-.faqlist .answer {
+.faq-answer {
   display: flex;
   height: 0;
   padding: 0 40px;
@@ -313,12 +308,16 @@ hr {
   border-radius: 0 0 10px 10px;
   background-color: var(--white);
 }
-.faqlist div.active .question {
+.faq-item.active .faq-question {
   border-radius: 10px 10px 0 0;
   background: var(--primary-hover);
 }
-.faqlist div.active .answer {
-  height: 120px;
+.faq-item.active .faq-question span {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+.faq-item.active .faq-answer {
+  height: 300px;
   padding: 20px 40px 30px;
   box-shadow: #00000025 4px 4px 4px;
 }
