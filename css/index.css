@@ -126,7 +126,39 @@
   color: var(--white);
 }
 /* 메인 : 강사진 소개 - 김소영 */
-
+.lecturer {
+  padding: 96px 0;
+  background: var(--dark-accent1);
+}
+.lecturer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.lecturer h2 {
+  text-align: center;
+  color: var(--white);
+}
+.instructor-list {
+  display: flex;
+  justify-content: space-between;
+  height: 760px;
+}
+.instructor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  padding: 10px 0;
+  text-align: center;
+}
+.instructor-name,
+p {
+  color: var(--white);
+}
+.instructor-role {
+  color: var(--primary-main);
+}
 /* 메인 : FAQ - 김소영 */
 
 /* 메인 : CTA - 김소영 */
