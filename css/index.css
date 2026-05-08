@@ -192,10 +192,14 @@ li > h3 {
   width: 800px;
   height: 258px;
   border: 1px solid var(--primary-light);
-
+  border-right: none;
+  border-radius: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.slider:last-child .slider-content {
+  border-right: 1px solid var(--primary-light);
 }
 
 .slider-content img {
