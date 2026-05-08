@@ -3,14 +3,26 @@
 /* 메인 : 히어로 - 김찬희 */
 
 /* 메인 : 문제 제기 - 김정우 */
+.problem {
+  padding: 96px 0;
+  gap: 30px;
+  background-color: var(--background);
+}
+.problem > .container {
+  gap: 120px;
+}
 .title {
   width: 700px;
   height: 100px;
   gap: 16px;
   padding: 30px 8px;
 }
-.question-container {
+.question {
   width: 1180px;
+  padding: 0 50px;
+}
+.question-container {
+  width: 200px;
   height: 300px;
   gap: 20px;
   padding: 10px;
@@ -33,13 +45,6 @@ li > h3 {
   justify-content: center;
 }
 /* 메인 : 프로그램 소개 - 김정우 */
-.program img {
-  width: 150px;
-  height: 150px;
-}
-#double {
-  width: 300px;
-}
 
 /* 메인 : 혜택 - 최정원 */
 
