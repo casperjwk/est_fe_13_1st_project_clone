@@ -523,6 +523,7 @@ nav ul li a {
 }
 .company-item p {
   color: var(--white);
+  margin-top: 8px;
 }
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
