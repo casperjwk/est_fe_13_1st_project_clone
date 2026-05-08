@@ -549,7 +549,7 @@ nav ul li a {
   color: var(--primary-main);
 }
 /* 메인 : FAQ - 김소영 */
-.FAQ {
+.faq {
   background: var(--background);
   padding: 96px 0;
 }
@@ -564,15 +564,14 @@ nav ul li a {
 }
 .faq-item {
   width: 1000px;
-  height: 80px;
-  background: var(--primary-light);
+  margin: 0 auto;
   border-radius: 10px;
+  overflow: hidden;
 }
 .faq-question {
-  width: 100%;
-  padding: 30px 40px;
-  cursor: pointer;
+  min-height: 80px;
 }
+
 /* 메인 : CTA - 김소영 */
 
 /* 푸터- 김소영 */
