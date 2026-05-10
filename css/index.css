@@ -506,7 +506,7 @@ nav ul li a {
 
 /* 메인 : 회사소개 - 김소영 */
 .company {
-  padding: 96px 0;
+  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .company .container {
@@ -527,7 +527,7 @@ nav ul li a {
 }
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
-  padding: 96px 0;
+  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .lecturer .container {
@@ -552,7 +552,7 @@ nav ul li a {
 /* 메인 : FAQ - 김소영 */
 .faq {
   background: var(--background);
-  padding: 96px 0;
+  padding: calc(var(--base-unit) * 3) 0;
 }
 .faq-header h2 {
   color: var(--text-main);
@@ -574,5 +574,26 @@ nav ul li a {
 }
 
 /* 메인 : CTA - 김소영 */
-
+.cta {
+  background: var(--background);
+  padding: calc(var(--base-unit) * 3) 0;
+}
+.cta-label {
+  color: var(--text-sub);
+}
+.cta-title {
+  color: var(--text-main);
+}
+.gradient-cta {
+  background: var(--gradient-button);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta-button-group {
+  margin-top: calc(var(--base-unit) * 0.5);
+}
+.cta-button-group .btn {
+  width: 223px;
+  padding: 0;
+} 
 /* 푸터- 김소영 */
