@@ -114,6 +114,7 @@
 .company-item p {
   color: var(--white);
 }
+
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
   padding: calc(var(--base-unit) * 3) 0;
@@ -138,6 +139,7 @@
 .instructor-role {
   color: var(--primary-main);
 }
+
 /* 메인 : FAQ - 김소영 */
 .FAQ {
   background: var(--background);
@@ -163,6 +165,7 @@
   padding: 30px 40px;
   cursor: pointer;
 }
+
 /* 메인 : CTA - 김소영 */
 .cta {
   background: var(--background);
@@ -185,5 +188,53 @@
 .cta-button-group .btn {
   width: 223px;
   padding: 0;
-} 
+}
+
 /* 푸터- 김소영 */
+footer {
+  background: var(--dark-accent1);
+  color: var(--text-inactive);
+  padding: calc(var(--base-unit) * 3) 0;
+}
+footer .container {
+  gap: 120px;
+  align-items: flex-start;
+}
+.footer-content {
+  flex-direction: row;
+  padding-bottom: 32px;
+  border-bottom: 0.8px solid var(--text-inactive);
+}
+.footer-logo img {
+  width: 209px;
+}
+.footer-top {
+  /* width: 300px; */
+  align-items: flex-start;
+}
+.footer-top p,
+.footer-info p {
+  margin-bottom: 12px;
+  color: var(--white);
+}
+.footer-policy,
+.footer-contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-contact li {
+  gap: 8px;
+}
+.footer-info {
+  /* width: 300px; */
+  align-items: flex-start;
+  gap: 40px;
+}
+.footer-sns img {
+  width: 32px;
+  height: 32px;
+}
+.footer-bottom {
+  padding-top: 32px;
+}
