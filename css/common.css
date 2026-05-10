@@ -55,6 +55,7 @@ body {
   font:
     var(--base-font)/var(--base-unit) "Pretendard",
     sans-serif;
+  background: var(--background);
 }
 
 /* 타이포그래피 - 최정원 */
