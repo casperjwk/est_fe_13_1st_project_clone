@@ -132,20 +132,22 @@
   }
 }
 /* 메인 : 결과 - 최정원 */
-.result {
-  gap: calc(var(--m-base-unit) * 4);
-}
-.resultList {
-  flex-wrap: wrap;
-  gap: 16px;
-  row-gap: var(--m-base-unit);
-}
-.resultList li {
-  width: 167px;
-}
-.companySlide img {
-  height: 50px;
-  padding: 16px;
+@media (max-width: 390px) {
+  .result {
+    gap: calc(var(--m-base-unit) * 4);
+  }
+  .resultList {
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: var(--m-base-unit);
+  }
+  .resultList li {
+    width: 167px;
+  }
+  .companySlide img {
+    height: 50px;
+    padding: 16px;
+  }
 }
 /* 메인 : 수강생 후기 - 김윤수 */
 
