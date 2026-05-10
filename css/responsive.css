@@ -112,7 +112,8 @@
   }
   .benefit-cards ul li {
     width: 167px;
-    height: 212px;
+    height: inherit;
+    padding: var(--m-base-unit) 0;
     gap: 18px;
   }
   .benefit-cards .text-body-m {
