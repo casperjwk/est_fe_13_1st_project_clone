@@ -140,8 +140,97 @@
   }
 }
 /* 메인 : 문제 제기 - 김정우 */
+@media (max-width: 390px) {
+  .problem {
+    padding: 96px 20px;
+    gap: 60px;
+  }
 
+  .problem > .title {
+    width: 350px;
+    height: 90px;
+    gap: 16px;
+    padding: 0 8px;
+  }
+
+  .question {
+    width: 350px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+  }
+
+  .question-container {
+    width: 170px;
+    height: 250px;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .question-list {
+    gap: 10px;
+  }
+
+  .question-list li > h3 {
+    width: 70px;
+    height: 70px;
+  }
+}
 /* 메인 : 프로그램 소개 - 김정우 */
+@media (max-width: 390px) {
+  .program {
+    height: 844px;
+    padding: 0;
+  }
+  .program > .container {
+    width: 350px;
+    padding: 20px 0;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .program > .container > .title {
+    gap: 16px;
+    height: 150px;
+  }
+  .program > .container > .title > h3 {
+    font-size: var(--m-h3);
+    text-align: center;
+  }
+  .program > .container > .title > p {
+    text-align: center;
+  }
+
+  .progress {
+    width: 350px;
+    height: 80px;
+  }
+
+  .sliderwrap {
+    width: 350px;
+    height: 380px;
+    flex-direction: column;
+  }
+
+  .slidercontainer > li {
+    transform: translateX(-350.5px);
+  }
+
+  .slider {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 310px;
+  }
+
+  .slider-content {
+    width: 350px;
+    height: 310px;
+    flex-direction: column;
+  }
+  .slider-content > .divider {
+    display: none;
+  }
+}
 
 /* 메인 : 혜택 - 최정원 */
 @media (max-width: 390px) {
