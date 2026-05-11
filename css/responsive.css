@@ -361,7 +361,7 @@
 @media (max-width:390px) {
   .process>div.container {
     gap: 40px;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .process_area:nth-of-type(2) {
