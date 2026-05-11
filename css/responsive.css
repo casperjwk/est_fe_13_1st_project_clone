@@ -99,6 +99,13 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
+  .btn-detail {
+    height: 60px;
+    gap: 10px;
+    padding: 0 55px;
+    border-radius: 15px;
+    font-size: var(--m-body-l);
+  }
 }
 
 /* 헤더 - 김찬희 */
@@ -169,15 +176,14 @@
     gap: 60px;
   }
 
-  .problem>.title {
+  .problem > .container > .title {
     width: 350px;
     height: 90px;
     gap: 16px;
     padding: 0 8px;
   }
-
   .question {
-    width: 350px;
+    min-width: 0;
     padding: 0;
     display: grid;
     gap: 10px;
@@ -222,10 +228,8 @@
 
   .program>.container>.title>h3 {
     font-size: var(--m-h3);
-    text-align: center;
   }
-
-  .program>.container>.title>p {
+  .program > .container > .title > * {
     text-align: center;
   }
 
@@ -397,11 +401,150 @@
 }
 
 /* 메인 : 회사소개 - 김소영 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@media (max-width: 430px) {
+  .company {
+    padding: 72px 20px;
+  }
+  .company .container {
+    width: 100%;
+    max-width: 100%;
+    gap: 64px;
+    padding: 0 24px;
+  }
+  .company h2 {
+    font-size: var(--m-h3);
+  }
+  .company .company-list {
+    width: 100%;
+    gap: 27px;
+  }
+  .company-list .company-item {
+    width: 100%;
+  }
+  .company-item h3 {
+    font-size: var(--m-h5);
+  }
+  .company-item p {
+    font-size: var(--m-body-m);
+  }
+}
 
 /* 메인 : 강사진 소개 - 김소영 */
+@media (max-width: 430px) {
+  /* 강사 소개 섹션 */
+  .lecturer {
+    padding: 72px 20px;
+    min-height: 1350px;
+  }
+  .lecturer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 40px;
+  }
+  .instructor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .instructor-card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .instructor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .text-center {
+    font-size: var(--m-h3);
+  }
+  .instructor-text {
+    font-size: var(--m-h4);
+  }
 
+  .instructor-info {
+    font-size: var(--m-body-m);
+  }
+}
 /* 메인 : FAQ - 김소영 */
-
+@media (max-width: 430px) {
+  .faq {
+    padding: 72px 20px;
+  }
+  .faq-question {
+    width: 344px;
+    min-height: 55px;
+    font-size: var(--m-caption);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .faq-list,
+  .faq-item,
+  .faq-question {
+    overflow: visible;
+  }
+  .faq-list {
+    gap: 16px;
+  }
+  .faq-question span {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .faq-header h2 {
+    font-size: var(--m-h3);
+  }
+  .faq-header p {
+    font-size: var(--m-caption);
+  }
+}
 /* 메인 : CTA - 김소영 */
+@media (max-width: 430px) {
+  .cta {
+    padding: 72px 20px;
+  }
+  .cta .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 40px;
+  }
+  .cta-label {
+    font-size: var(--m-caption);
+  }
+  .cta-title {
+    font-size: var(--m-h3);
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .cta-button-group .btn-detail,
+  .cta-button-group .btn-rec {
+    width: 160px;
+    height: 60px;
+    gap: 10px;
+    padding: 28px;
+    border-radius: 15px;
+    font-size: var(--m-body-l);
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    text-align: center;
+  }
+}
 /* 푸터- 김소영 */
