@@ -359,7 +359,38 @@
   }
 }
 /* 메인 : FAQ - 김소영 */
-
+@media (max-width: 430px) {
+  .faq {
+    padding: 72px 20px;
+  }
+  .faq-question {
+    width: 344px;
+    min-height: 55px;
+    font-size: var(--m-caption);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .faq-list,
+  .faq-item,
+  .faq-question {
+    overflow: visible;
+  }
+  .faq-list {
+    gap: 16px;
+  }
+  .faq-question span {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .faq-header h2 {
+    font-size: var(--m-h3);
+  }
+  .faq-header p {
+    font-size: var(--m-caption);
+  }
+}
 /* 메인 : CTA - 김소영 */
 
 /* 푸터- 김소영 */
