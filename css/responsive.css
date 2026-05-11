@@ -1,8 +1,5 @@
 /* 공통 */
 @media (max-width: 390px) {
-  .container {
-    width: 350px;
-  }
   .inner-pd {
     padding: calc(var(--m-base-unit) * 3) 0;
   }
@@ -163,19 +160,19 @@
     gap: 18px;
   }
   .benefit-cards .text-body-m {
-    height: 64px;
+    height: 80%;
   }
   .benefit-cards ul li:first-child .text-body-m {
-    width: 123px;
+    width: 90%;
   }
   .benefit-cards ul li:nth-child(2) .text-body-m {
-    width: 167px;
+    width: 90%;
   }
   .benefit-cards ul li:nth-child(3) .text-body-m {
-    width: 148px;
+    width: 90%;
   }
   .benefit-cards ul li:last-child .text-body-m {
-    width: 158px;
+    width: 90%;
   }
 }
 /* 메인 : 결과 - 최정원 */
@@ -189,7 +186,7 @@
     row-gap: var(--m-base-unit);
   }
   .resultList li {
-    width: 167px;
+    width: 45%;
   }
   .companySlide img {
     height: 50px;
