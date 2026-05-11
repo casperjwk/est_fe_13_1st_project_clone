@@ -141,7 +141,7 @@
     flex-direction: column;
   }
 
-  .title-text>span {
+  .title-text > span {
     font-size: var(--m-caption);
   }
 
@@ -201,7 +201,7 @@
     gap: 10px;
   }
 
-  .question-list li>h3 {
+  .question-list li > h3 {
     width: 70px;
     height: 70px;
   }
@@ -214,19 +214,19 @@
     padding: 0;
   }
 
-  .program>.container {
+  .program > .container {
     width: 350px;
     padding: 20px 0;
     gap: 16px;
     flex-direction: column;
   }
 
-  .program>.container>.title {
+  .program > .container > .title {
     gap: 16px;
     height: 150px;
   }
 
-  .program>.container>.title>h3 {
+  .program > .container > .title > h3 {
     font-size: var(--m-h3);
   }
   .program > .container > .title > * {
@@ -244,7 +244,7 @@
     flex-direction: column;
   }
 
-  .slidercontainer>li {
+  .slidercontainer > li {
     transform: translateX(-350.5px);
   }
 
@@ -260,7 +260,7 @@
     flex-direction: column;
   }
 
-  .slider-content>.divider {
+  .slider-content > .divider {
     display: none;
   }
 }
@@ -328,8 +328,8 @@
 }
 
 /* 메인 : 수강생 후기 - 김윤수 */
-@media (max-width:390px) {
-  .review>div:nth-child(2) {
+@media (max-width: 390px) {
+  .review > div:nth-child(2) {
     flex-direction: column;
     gap: 40px;
   }
@@ -362,8 +362,8 @@
 }
 
 /* 메인 : 프로세스 - 김윤수 */
-@media (max-width:390px) {
-  .process>div.container {
+@media (max-width: 390px) {
+  .process > div.container {
     gap: 40px;
     padding: 0;
   }
@@ -401,15 +401,16 @@
 }
 
 /* 메인 : 회사소개 - 김소영 */
-@media (max-width: 430px) {
+@media (max-width: 390px) {
   .company {
-    padding: 72px 20px;
+    padding: 72px 0;
   }
   .company .container {
     width: 100%;
     max-width: 100%;
+    padding: 0 20px;
     gap: 64px;
-    padding: 0 24px;
+    box-sizing: border-box;
   }
   .company h2 {
     font-size: var(--m-h3);
@@ -430,7 +431,7 @@
 }
 
 /* 메인 : 강사진 소개 - 김소영 */
-@media (max-width: 430px) {
+@media (max-width: 390px) {
   /* 강사 소개 섹션 */
   .lecturer {
     padding: 72px 20px;
@@ -470,7 +471,7 @@
   }
 }
 /* 메인 : FAQ - 김소영 */
-@media (max-width: 430px) {
+@media (max-width: 390px) {
   .faq {
     padding: 72px 20px;
   }
@@ -503,7 +504,7 @@
   }
 }
 /* 메인 : CTA - 김소영 */
-@media (max-width: 430px) {
+@media (max-width: 390px) {
   .cta {
     padding: 72px 20px;
   }
@@ -529,17 +530,103 @@
   .cta-button-group .btn-detail,
   .cta-button-group .btn-rec {
     width: 160px;
-    height: 60px;
+    height: 50px;
     gap: 10px;
-    padding: 28px;
+    padding: 0 28px;
     border-radius: 15px;
     font-size: var(--m-body-l);
     white-space: nowrap;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
   }
 }
 /* 푸터- 김소영 */
+@media (max-width: 390px) {
+  footer {
+    padding: 72px 0 40px;
+  }
+
+  footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* 전체 구조 */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 로고 */
+  .footer-logo img {
+    width: 140px;
+    height: auto;
+  }
+
+  /* 오른쪽 영역 */
+  .footer-right {
+    width: 100%;
+    gap: 32px;
+  }
+
+  /* 상단 */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* 정책 + 문의 */
+  .footer-policy-wrap,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-policy,
+  .footer-contact ul {
+    gap: 8px;
+  }
+
+  .footer-policy-wrap p,
+  .footer-contact p {
+    font-size: var(--m-caption);
+  }
+
+  .footer-policy a,
+  .footer-contact li {
+    font-size: var(--m-caption);
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+
+  /* SNS */
+  .footer-sns {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-sns img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 하단 */
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom p {
+    font-size: var(--m-caption);
+    word-break: keep-all;
+  }
+}
