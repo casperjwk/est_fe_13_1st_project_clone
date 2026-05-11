@@ -194,9 +194,8 @@
   }
   .program > .container > .title > h3 {
     font-size: var(--m-h3);
-    text-align: center;
   }
-  .program > .container > .title > p {
+  .program > .container > .title > * {
     text-align: center;
   }
 
