@@ -1,0 +1,165 @@
+/* 공통 */
+@media (max-width: 390px) {
+  .container {
+    width: 350px;
+  }
+  .inner-pd {
+    padding: calc(var(--m-base-unit) * 3) 0;
+  }
+
+  /* 갭 조정 */
+  .g-1 {
+    gap: calc(var(--m-base-unit) * 0.5); /* 12 */
+  }
+
+  .g-2 {
+    gap: var(--m-base-unit); /* 24 */
+  }
+
+  .g-3 {
+    gap: calc(var(--m-base-unit) * 2); /* 48 */
+  }
+
+  /* 타이포그래피 조정 */
+  .text-heading2 {
+    /* 대형 타이틀 */
+    font-size: var(--m-h2);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+  .text-heading3 {
+    /* 대형 섹션 타이틀 */
+    font-size: var(--m-h3);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .text-heading4 {
+    /* 섹션 타이틀 */
+    font-size: var(--m-h4);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .text-heading5,
+  .text-heading6 {
+    /* 중간, 카드 타이틀 */
+    font-size: var(--m-h5);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .text-body-l {
+    /* 강조 본문 */
+    font-size: var(--m-body-l);
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+  .text-body-m {
+    /* 기본 본문 */
+    font-size: var(--m-body-m);
+    line-height: 1.6;
+  }
+  .text-caption {
+    /* 보조 텍스트 */
+    font-size: var(--m-caption);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+
+  /* 버튼 크기 조정 */
+  .btn-small {
+    height: 52px;
+    gap: 5px;
+    padding: 0 36px;
+    border-radius: 100px;
+    font-size: var(--m-body-l);
+  }
+  .btn-big {
+    height: 60px;
+    gap: 10px;
+    padding: 0 36px;
+    border-radius: 100px;
+    font-size: var(--m-body-l);
+  }
+  .btn-rec {
+    height: 60px;
+    gap: 10px;
+    padding: 0 55px;
+    border-radius: 15px;
+    font-size: var(--m-body-l);
+  }
+}
+/* 헤더 - 김찬희 */
+
+/* 메인 : 히어로 - 김찬희 */
+
+/* 메인 : 문제 제기 - 김정우 */
+
+/* 메인 : 프로그램 소개 - 김정우 */
+
+/* 메인 : 혜택 - 최정원 */
+@media (max-width: 390px) {
+  .benefit-icon span {
+    font-size: 36px;
+  }
+  .benefit-cards ul {
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: calc(var(--m-base-unit) * 2);
+  }
+  .benefit-cards ul li {
+    width: 167px;
+    height: inherit;
+    padding: var(--m-base-unit) 0;
+    gap: 18px;
+  }
+  .benefit-cards .text-body-m {
+    height: 64px;
+  }
+  .benefit-cards ul li:first-child .text-body-m {
+    width: 123px;
+  }
+  .benefit-cards ul li:nth-child(2) .text-body-m {
+    width: 167px;
+  }
+  .benefit-cards ul li:nth-child(3) .text-body-m {
+    width: 148px;
+  }
+  .benefit-cards ul li:last-child .text-body-m {
+    width: 158px;
+  }
+}
+/* 메인 : 결과 - 최정원 */
+@media (max-width: 390px) {
+  .result {
+    gap: calc(var(--m-base-unit) * 4);
+  }
+  .resultList {
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: var(--m-base-unit);
+  }
+  .resultList li {
+    width: 167px;
+  }
+  .companySlide img {
+    height: 50px;
+    padding: 16px;
+  }
+}
+/* 메인 : 수강생 후기 - 김윤수 */
+
+/* 메인 : 프로세스 - 김윤수 */
+
+/* 메인 : 회사소개 - 김소영 */
+
+/* 메인 : 강사진 소개 - 김소영 */
+
+/* 메인 : FAQ - 김소영 */
+
+/* 메인 : CTA - 김소영 */
+
+/* 푸터- 김소영 */

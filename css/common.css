@@ -4,10 +4,12 @@
 @import url(./flex-utility.css);
 
 :root {
+  /* 변수지정 - 최정원 */
   /* 최상위 선택자 */
   /* 레이아웃 */
   --base-unit: 32px;
   --base-font: 16px;
+  --m-base-unit: 24px;
 
   /* 색상 스타일 */
   --gradient: linear-gradient(to bottom, rgba(29, 207, 111, 1), rgba(59, 130, 246, 1));
@@ -38,15 +40,25 @@
   --body-l: calc(var(--base-font) * 1.5);
   --body-m: var(--base-font);
   --caption: calc(var(--base-font) * 0.875);
+
+  /* 텍스트 사이즈 스타일 - 모바일 */
+  --m-h2: calc(var(--base-font) * 2.5);
+  --m-h3: calc(var(--base-font) * 2);
+  --m-h4: calc(var(--base-font) * 1.5);
+  --m-h5: calc(var(--base-font) * 1.25);
+  --m-body-l: var(--base-font);
+  --m-body-m: calc(var(--base-font) * 0.875);
+  --m-caption: calc(var(--base-font) * 0.75);
 }
 
 body {
   font:
     var(--base-font)/var(--base-unit) "Pretendard",
     sans-serif;
+  background: var(--background);
 }
 
-/* 타이포그래피 */
+/* 타이포그래피 - 최정원 */
 .text-heading2 {
   /* 대형 타이틀 */
   font-size: var(--h2);
@@ -105,6 +117,60 @@ body {
   /* 보조 텍스트 */
   font-size: var(--caption);
   line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* 모바일 타이포그래피 - 최정원 */
+.m-text-heading2 {
+  /* 대형 타이틀 */
+  font-size: var(--m-h2);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.m-text-heading3 {
+  /* 대형 섹션 타이틀 */
+  font-size: var(--m-h3);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.m-text-heading4 {
+  /* 섹션 타이틀 */
+  font-size: var(--m-h4);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.m-text-heading5 {
+  /* 중간, 카드 타이틀 */
+  font-size: var(--m-h5);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.m-text-body-l {
+  /* 강조 본문 */
+  font-size: var(--m-body-l);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.m-text-body-m {
+  /* 기본 본문 */
+  font-size: var(--m-body-m);
+  line-height: 1.6;
+}
+
+.m-text-caption {
+  /* 보조 텍스트 */
+  font-size: var(--m-caption);
+  line-height: 1.5;
   letter-spacing: 0.01em;
 }
 

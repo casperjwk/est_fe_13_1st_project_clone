@@ -506,7 +506,6 @@ nav ul li a {
 
 /* 메인 : 회사소개 - 김소영 */
 .company {
-  padding: 96px 0;
   background: var(--dark-accent1);
 }
 .company .container {
@@ -525,9 +524,9 @@ nav ul li a {
   color: var(--white);
   margin-top: 8px;
 }
+
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
-  padding: 96px 0;
   background: var(--dark-accent1);
 }
 .lecturer .container {
@@ -549,10 +548,10 @@ nav ul li a {
 .instructor-role {
   color: var(--primary-main);
 }
+
 /* 메인 : FAQ - 김소영 */
 .faq {
   background: var(--background);
-  padding: 96px 0;
 }
 .faq-header h2 {
   color: var(--text-main);
@@ -574,5 +573,82 @@ nav ul li a {
 }
 
 /* 메인 : CTA - 김소영 */
+.cta {
+  background: var(--background);
+}
+.cta-label {
+  color: var(--text-sub);
+}
+.cta-title {
+  color: var(--text-main);
+}
+.gradient-cta {
+  background: var(--gradient-button);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta-button-group {
+  margin-top: calc(var(--base-unit) * 0.5);
+}
+.cta-button-group .btn {
+  width: 223px;
+  padding: 0;
+}
 
 /* 푸터- 김소영 */
+footer {
+  background: var(--dark-accent1);
+  color: var(--text-inactive);
+  padding: calc(var(--base-unit) * 3) 0;
+}
+footer .container {
+  gap: 120px;
+  align-items: flex-start;
+}
+.footer-content {
+  /* align-items: flex-start; */
+}
+.footer-right {
+  flex: 1;
+}
+.footer-logo img {
+  width: 209px;
+  padding-right: 30px;
+}
+.footer-top {
+  /* width: 300px; */
+  /* align-items: flex-start; */
+  padding-bottom: 32px;
+  border-bottom: 0.8px solid var(--text-inactive);
+}
+.footer-policy-wrap,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top p,
+.footer-contact p {
+  margin-bottom: 12px;
+  color: var(--white);
+}
+.footer-policy,
+.footer-contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-contact {
+  /* width: 300px; */
+  /* align-items: flex-start; */
+  /* gap: 40px; */
+}
+.footer-contact li {
+  gap: 8px;
+}
+.footer-sns img {
+  width: 32px;
+  height: 32px;
+}
+.footer-bottom {
+  padding-top: 32px;
+}
