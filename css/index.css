@@ -37,6 +37,13 @@ nav ul li a {
   justify-content: center;
 }
 
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* 메인 : 히어로 - 김찬희 */
 .hero {
   margin-top: 96px;
@@ -65,9 +72,20 @@ nav ul li a {
   color: var(--text-main);
 }
 
-.title-text a {
+.hero-btn-group {
+  display: flex;
   margin-top: 40px;
-  /* box-sizing: border-box; */
+}
+
+.title-text .btn-rec,
+.title-text .btn-detail {
+  width: 223px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .title-text a:nth-of-type(1) {
@@ -156,10 +174,11 @@ nav ul li a {
   padding: 64px 0;
 }
 
-.program>.title {
+.program>.container>.title {
+  min-width: 327px;
   height: 450px;
   gap: 16px;
-  padding: 100px;
+  padding: 30px;
 }
 
 .program-list {
@@ -172,10 +191,6 @@ nav ul li a {
   height: 80px;
   position: relative;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  overflow: visible;
 }
 
 /* 전체 점선 */
@@ -647,7 +662,7 @@ nav ul li a {
 }
 
 .faq-question {
-  min-height: 80px;
+  /* min-height: 80px; */
 }
 
 /* 메인 : CTA - 김소영 */
