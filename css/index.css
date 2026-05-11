@@ -148,6 +148,7 @@ nav ul li a {
   padding: 64px 0;
 }
 .program > .container > .title {
+  min-width: 327px;
   height: 450px;
   gap: 16px;
   padding: 30px;
