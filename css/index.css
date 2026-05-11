@@ -96,7 +96,6 @@
 
 /* 메인 : 회사소개 - 김소영 */
 .company {
-  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .company .container {
@@ -117,7 +116,6 @@
 
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
-  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .lecturer .container {
@@ -143,7 +141,6 @@
 /* 메인 : FAQ - 김소영 */
 .FAQ {
   background: var(--background);
-  padding: calc(var(--base-unit) * 3) 0;
 }
 .faq-header h2 {
   color: var(--text-main);
@@ -169,7 +166,6 @@
 /* 메인 : CTA - 김소영 */
 .cta {
   background: var(--background);
-  padding: calc(var(--base-unit) * 3) 0;
 }
 .cta-label {
   color: var(--text-sub);
@@ -201,19 +197,28 @@ footer .container {
   align-items: flex-start;
 }
 .footer-content {
-  flex-direction: row;
-  padding-bottom: 32px;
-  border-bottom: 0.8px solid var(--text-inactive);
+  /* align-items: flex-start; */
+}
+.footer-right {
+  flex: 1;
 }
 .footer-logo img {
   width: 209px;
+  padding-right: 30px;
 }
 .footer-top {
   /* width: 300px; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  padding-bottom: 32px;
+  border-bottom: 0.8px solid var(--text-inactive);
+}
+.footer-policy-wrap,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
 }
 .footer-top p,
-.footer-info p {
+.footer-contact p {
   margin-bottom: 12px;
   color: var(--white);
 }
@@ -223,13 +228,13 @@ footer .container {
   padding: 0;
   list-style: none;
 }
+.footer-contact {
+  /* width: 300px; */
+  /* align-items: flex-start; */
+  /* gap: 40px; */
+}
 .footer-contact li {
   gap: 8px;
-}
-.footer-info {
-  /* width: 300px; */
-  align-items: flex-start;
-  gap: 40px;
 }
 .footer-sns img {
   width: 32px;
