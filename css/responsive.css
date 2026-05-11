@@ -1,8 +1,5 @@
 /* 공통 */
 @media (max-width: 390px) {
-  .container {
-    width: 350px;
-  }
   .inner-pd {
     padding: calc(var(--m-base-unit) * 3) 0;
   }
@@ -93,9 +90,55 @@
   }
 }
 /* 헤더 - 김찬희 */
-
+@media (max-width: 390px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 72px;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  nav,
+  .nav-btn {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
 /* 메인 : 히어로 - 김찬희 */
-
+@media (max-width: 390px) {
+  .hero .container {
+    flex-direction: column;
+  }
+  .title-text > span {
+    font-size: var(--m-caption);
+  }
+  .title-text h2 {
+    font-size: var(--m-h2);
+    margin-bottom: 24px;
+  }
+  .title-text p {
+    font-size: var(--m-body-l);
+  }
+  .title-text a {
+    margin-top: 28px;
+  }
+  .hero .btn-rec,
+  .btn-detail {
+    height: 52px;
+  }
+  .hero img {
+    width: 260px;
+    align-self: center;
+  }
+}
 /* 메인 : 문제 제기 - 김정우 */
 @media (max-width: 390px) {
   .problem {
@@ -206,19 +249,19 @@
     gap: 18px;
   }
   .benefit-cards .text-body-m {
-    height: 64px;
+    height: 80%;
   }
   .benefit-cards ul li:first-child .text-body-m {
-    width: 123px;
+    width: 90%;
   }
   .benefit-cards ul li:nth-child(2) .text-body-m {
-    width: 167px;
+    width: 90%;
   }
   .benefit-cards ul li:nth-child(3) .text-body-m {
-    width: 148px;
+    width: 90%;
   }
   .benefit-cards ul li:last-child .text-body-m {
-    width: 158px;
+    width: 90%;
   }
 }
 /* 메인 : 결과 - 최정원 */
@@ -232,7 +275,7 @@
     row-gap: var(--m-base-unit);
   }
   .resultList li {
-    width: 167px;
+    width: 45%;
   }
   .companySlide img {
     height: 50px;
