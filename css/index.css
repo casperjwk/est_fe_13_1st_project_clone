@@ -31,6 +31,12 @@ nav ul li a {
   box-sizing: border-box;
   justify-content: center;
 }
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 /* 메인 : 히어로 - 김찬희 */
 .hero {
@@ -55,9 +61,19 @@ nav ul li a {
   font-size: var(--body-l);
   color: var(--text-main);
 }
-.title-text a {
+.hero-btn-group {
+  display: flex;
   margin-top: 40px;
-  /* box-sizing: border-box; */
+}
+.title-text .btn-rec,
+.title-text .btn-detail {
+  width: 223px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .title-text a:nth-of-type(1) {
   margin-right: 19px;
@@ -506,7 +522,6 @@ nav ul li a {
 
 /* 메인 : 회사소개 - 김소영 */
 .company {
-  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .company .container {
@@ -525,9 +540,9 @@ nav ul li a {
   color: var(--white);
   margin-top: 8px;
 }
+
 /* 메인 : 강사진 소개 - 김소영 */
 .lecturer {
-  padding: calc(var(--base-unit) * 3) 0;
   background: var(--dark-accent1);
 }
 .lecturer .container {
@@ -549,10 +564,10 @@ nav ul li a {
 .instructor-role {
   color: var(--primary-main);
 }
+
 /* 메인 : FAQ - 김소영 */
 .faq {
   background: var(--background);
-  padding: calc(var(--base-unit) * 3) 0;
 }
 .faq-header h2 {
   color: var(--text-main);
@@ -576,7 +591,6 @@ nav ul li a {
 /* 메인 : CTA - 김소영 */
 .cta {
   background: var(--background);
-  padding: calc(var(--base-unit) * 3) 0;
 }
 .cta-label {
   color: var(--text-sub);
@@ -595,5 +609,62 @@ nav ul li a {
 .cta-button-group .btn {
   width: 223px;
   padding: 0;
-} 
+}
+
 /* 푸터- 김소영 */
+footer {
+  background: var(--dark-accent1);
+  color: var(--text-inactive);
+  padding: calc(var(--base-unit) * 3) 0;
+}
+footer .container {
+  gap: 120px;
+  align-items: flex-start;
+}
+.footer-content {
+  /* align-items: flex-start; */
+}
+.footer-right {
+  flex: 1;
+}
+.footer-logo img {
+  width: 209px;
+  padding-right: 30px;
+}
+.footer-top {
+  /* width: 300px; */
+  /* align-items: flex-start; */
+  padding-bottom: 32px;
+  border-bottom: 0.8px solid var(--text-inactive);
+}
+.footer-policy-wrap,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-top p,
+.footer-contact p {
+  margin-bottom: 12px;
+  color: var(--white);
+}
+.footer-policy,
+.footer-contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-contact {
+  /* width: 300px; */
+  /* align-items: flex-start; */
+  /* gap: 40px; */
+}
+.footer-contact li {
+  gap: 8px;
+}
+.footer-sns img {
+  width: 32px;
+  height: 32px;
+}
+.footer-bottom {
+  padding-top: 32px;
+}
