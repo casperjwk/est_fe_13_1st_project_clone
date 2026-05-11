@@ -585,7 +585,7 @@ nav ul li a {
   overflow: hidden;
 }
 .faq-question {
-  min-height: 80px;
+  /* min-height: 80px; */
 }
 
 /* 메인 : CTA - 김소영 */
