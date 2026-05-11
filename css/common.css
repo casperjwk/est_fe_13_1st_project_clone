@@ -298,16 +298,20 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   padding: 0 40px;
+  min-height: 80px;
   background: var(--primary-light);
   cursor: pointer;
   box-shadow: #00000025 4px 4px 4px;
+  margin: 0;
+  box-sizing: border-box;
 }
 .faq-question span {
   opacity: 0.2;
   color: #000;
   transition: 0.35s;
+  flex-shrink: 0;
+  margin-left: 16px;
 }
 .faq-answer {
   display: flex;
