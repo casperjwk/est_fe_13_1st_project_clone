@@ -14,7 +14,7 @@
     <!-- 김찬희 -->
     <header>
       <div class="container d-flex justify-content-between align-items-center">
-        <h1>
+        <h1 class="logo">
           <a href="index.html">
             <img src="images/Logo.png" alt="EST logo" />
             <span class="hidden">Logo</span>
@@ -23,16 +23,16 @@
         <nav>
           <ul class="d-flex align-items-center text-body-m">
             <li>
-              <a href="" class="nav-link active">커리큘럼</a>
+              <a href="#curriculum" class="nav-link active">커리큘럼</a>
             </li>
             <li>
-              <a href="" class="nav-link">취업성과</a>
+              <a href="#result" class="nav-link">취업성과</a>
             </li>
             <li>
-              <a href="" class="nav-link">수강후기</a>
+              <a href="#review" class="nav-link">수강후기</a>
             </li>
             <li class="nav-cta">
-              <a href="" class="nav-link">faq</a>
+              <a href="#faq" class="nav-link">faq</a>
             </li>
           </ul>
         </nav>
@@ -42,6 +42,7 @@
             <span class="material-icons arrow">arrow_forward</span>
           </a>
         </div>
+        <button class="material-icons menu">menu</button>
       </div>
     </header>
     <main>
@@ -58,13 +59,15 @@
             </h2>
             <p>실무 중심 커리큘럼과 1:1 멘토링으로</p>
             <p>취업까지 이어지는 집중 부트캠프</p>
-            <a href="" class="btn btn-rec">
-              <span>지원하기</span>
-              <span class="material-icons arrow">arrow_forward</span>
-            </a>
-            <a href="" class="btn-detail">
-              <span>프로그램 살펴보기</span>
-            </a>
+            <div class="hero-btn-group">
+              <a href="" class="btn btn-rec">
+                <span>지원하기</span>
+                <span class="material-icons arrow">arrow_forward</span>
+              </a>
+              <a href="" class="btn-detail">
+                <span>프로그램 살펴보기</span>
+              </a>
+            </div>
           </div>
           <img src="images/hero.png" alt="" />
         </div>
@@ -165,7 +168,7 @@
         </div>
       </section>
       <hr class="container" />
-      <section class="program">
+      <section id="curriculum" class="program">
         <div class="container d-flex justify-content-between">
           <h2 class="hidden">프로그램 소개</h2>
           <div class="title d-flex flex-column g-1">
@@ -352,7 +355,7 @@
           </a>
         </div>
       </section>
-      <section class="result d-flex flex-column inner-pd">
+      <section id="result" class="result d-flex flex-column inner-pd">
         <div class="container d-flex flex-column align-items-center justify-content-center g-3">
           <h2 class="text-heading4">숫자가 증명합니다</h2>
           <ul class="resultList d-flex justify-content-between text-center">
@@ -396,7 +399,7 @@
       </section>
       <!-- /최정원 -->
       <!-- 김윤수 -->
-      <section class="review d-flex flex-column inner-pd g-3">
+      <section id="review" class="review d-flex flex-column inner-pd g-3">
         <div class="container d-flex flex-column align-items-center justify-content-center g-1">
           <h2 class="text-heading4">실제 수강생들의 후기</h2>
           <p class="text-caption">그들도 처음에는 코드 한 줄 몰랐습니다</p>
