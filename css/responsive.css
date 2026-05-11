@@ -91,17 +91,50 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
-}
-/* 헤더 - 김찬희 */
 
-/* 메인 : 히어로 - 김찬희 */
+  /* 헤더 - 김찬희 */
 
-/* 메인 : 문제 제기 - 김정우 */
+  /* 메인 : 히어로 - 김찬희 */
 
-/* 메인 : 프로그램 소개 - 김정우 */
+  /* 메인 : 문제 제기 - 김정우 */
+  .problem {
+    padding: 96px 20px;
+    gap: 60px;
+  }
 
-/* 메인 : 혜택 - 최정원 */
-@media (max-width: 390px) {
+  .problem > .title {
+    width: 350px;
+    height: 90px;
+    gap: 16px;
+    padding: 0 8px;
+  }
+
+  .question {
+    width: 350px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+  }
+
+  .question-container {
+    width: 170px;
+    height: 250px;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .question-list {
+    gap: 10px;
+  }
+
+  .question-list li > h3 {
+    width: 70px;
+    height: 70px;
+  }
+  /* 메인 : 프로그램 소개 - 김정우 */
+
+  /* 메인 : 혜택 - 최정원 */
   .benefit-icon span {
     font-size: 36px;
   }
@@ -131,9 +164,8 @@
   .benefit-cards ul li:last-child .text-body-m {
     width: 158px;
   }
-}
-/* 메인 : 결과 - 최정원 */
-@media (max-width: 390px) {
+
+  /* 메인 : 결과 - 최정원 */
   .result {
     gap: calc(var(--m-base-unit) * 4);
   }
@@ -149,17 +181,18 @@
     height: 50px;
     padding: 16px;
   }
+
+  /* 메인 : 수강생 후기 - 김윤수 */
+
+  /* 메인 : 프로세스 - 김윤수 */
+
+  /* 메인 : 회사소개 - 김소영 */
+
+  /* 메인 : 강사진 소개 - 김소영 */
+
+  /* 메인 : FAQ - 김소영 */
+
+  /* 메인 : CTA - 김소영 */
+
+  /* 푸터- 김소영 */
 }
-/* 메인 : 수강생 후기 - 김윤수 */
-
-/* 메인 : 프로세스 - 김윤수 */
-
-/* 메인 : 회사소개 - 김소영 */
-
-/* 메인 : 강사진 소개 - 김소영 */
-
-/* 메인 : FAQ - 김소영 */
-
-/* 메인 : CTA - 김소영 */
-
-/* 푸터- 김소영 */
