@@ -292,11 +292,6 @@
 /* 메인 : 프로세스 - 김윤수 */
 
 /* 메인 : 회사소개 - 김소영 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 @media (max-width: 430px) {
   .company {
     padding: 72px 20px;
