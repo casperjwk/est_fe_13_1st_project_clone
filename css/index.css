@@ -31,7 +31,7 @@ nav ul li a {
   box-sizing: border-box;
   justify-content: center;
 }
-.close {
+.menu {
   display: none;
   background: none;
   border: none;
@@ -147,10 +147,10 @@ nav ul li a {
   gap: 32px;
   padding: 64px 0;
 }
-.program > .title {
+.program > .container > .title {
   height: 450px;
   gap: 16px;
-  padding: 100px;
+  padding: 30px;
 }
 
 .program-list {
@@ -162,10 +162,6 @@ nav ul li a {
   height: 80px;
   position: relative;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  overflow: visible;
 }
 
 /* 전체 점선 */

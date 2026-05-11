@@ -120,63 +120,10 @@ body {
   letter-spacing: 0.01em;
 }
 
-/* 모바일 타이포그래피 - 최정원 */
-.m-text-heading2 {
-  /* 대형 타이틀 */
-  font-size: var(--m-h2);
-  line-height: 1.15;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-}
-
-.m-text-heading3 {
-  /* 대형 섹션 타이틀 */
-  font-size: var(--m-h3);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  font-weight: 700;
-}
-
-.m-text-heading4 {
-  /* 섹션 타이틀 */
-  font-size: var(--m-h4);
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-  font-weight: 700;
-}
-
-.m-text-heading5 {
-  /* 중간, 카드 타이틀 */
-  font-size: var(--m-h5);
-  line-height: 1.4;
-  letter-spacing: -0.01em;
-  font-weight: 700;
-}
-
-.m-text-body-l {
-  /* 강조 본문 */
-  font-size: var(--m-body-l);
-  line-height: 1.6;
-  letter-spacing: -0.01em;
-  font-weight: 500;
-}
-
-.m-text-body-m {
-  /* 기본 본문 */
-  font-size: var(--m-body-m);
-  line-height: 1.6;
-}
-
-.m-text-caption {
-  /* 보조 텍스트 */
-  font-size: var(--m-caption);
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-}
-
 /* 레이아웃 */
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
