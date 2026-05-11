@@ -91,12 +91,13 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
+}
+/* 헤더 - 김찬희 */
 
-  /* 헤더 - 김찬희 */
+/* 메인 : 히어로 - 김찬희 */
 
-  /* 메인 : 히어로 - 김찬희 */
-
-  /* 메인 : 문제 제기 - 김정우 */
+/* 메인 : 문제 제기 - 김정우 */
+@media (max-width: 390px) {
   .problem {
     padding: 96px 20px;
     gap: 60px;
@@ -132,9 +133,64 @@
     width: 70px;
     height: 70px;
   }
-  /* 메인 : 프로그램 소개 - 김정우 */
+}
+/* 메인 : 프로그램 소개 - 김정우 */
+@media (max-width: 390px) {
+  .program {
+    height: 844px;
+    padding: 0;
+  }
+  .program > .container {
+    width: 350px;
+    padding: 20px 0;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .program > .container > .title {
+    gap: 16px;
+    height: 150px;
+  }
+  .program > .container > .title > h3 {
+    font-size: var(--m-h3);
+    text-align: center;
+  }
+  .program > .container > .title > p {
+    text-align: center;
+  }
 
-  /* 메인 : 혜택 - 최정원 */
+  .progress {
+    width: 350px;
+    height: 80px;
+  }
+
+  .sliderwrap {
+    width: 350px;
+    height: 380px;
+    flex-direction: column;
+  }
+
+  .slidercontainer > li {
+    transform: translateX(-350.5px);
+  }
+
+  .slider {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 310px;
+  }
+
+  .slider-content {
+    width: 350px;
+    height: 310px;
+    flex-direction: column;
+  }
+  .slider-content > .divider {
+    display: none;
+  }
+}
+
+/* 메인 : 혜택 - 최정원 */
+@media (max-width: 390px) {
   .benefit-icon span {
     font-size: 36px;
   }
@@ -164,8 +220,9 @@
   .benefit-cards ul li:last-child .text-body-m {
     width: 158px;
   }
-
-  /* 메인 : 결과 - 최정원 */
+}
+/* 메인 : 결과 - 최정원 */
+@media (max-width: 390px) {
   .result {
     gap: calc(var(--m-base-unit) * 4);
   }
@@ -181,18 +238,17 @@
     height: 50px;
     padding: 16px;
   }
-
-  /* 메인 : 수강생 후기 - 김윤수 */
-
-  /* 메인 : 프로세스 - 김윤수 */
-
-  /* 메인 : 회사소개 - 김소영 */
-
-  /* 메인 : 강사진 소개 - 김소영 */
-
-  /* 메인 : FAQ - 김소영 */
-
-  /* 메인 : CTA - 김소영 */
-
-  /* 푸터- 김소영 */
 }
+/* 메인 : 수강생 후기 - 김윤수 */
+
+/* 메인 : 프로세스 - 김윤수 */
+
+/* 메인 : 회사소개 - 김소영 */
+
+/* 메인 : 강사진 소개 - 김소영 */
+
+/* 메인 : FAQ - 김소영 */
+
+/* 메인 : CTA - 김소영 */
+
+/* 푸터- 김소영 */
