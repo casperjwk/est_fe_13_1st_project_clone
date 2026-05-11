@@ -15,6 +15,9 @@ header {
 nav ul {
   gap: 50px;
 }
+nav ul li {
+  width: 100%;
+}
 nav ul li a {
   font-weight: bold;
 }

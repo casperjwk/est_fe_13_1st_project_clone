@@ -201,9 +201,79 @@
 /* 메인 : 프로세스 - 김윤수 */
 
 /* 메인 : 회사소개 - 김소영 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@media (max-width: 430px) {
+  .company {
+    padding: 72px 20px;
+  }
+  .company .container {
+    width: 100%;
+    max-width: 100%;
+    gap: 64px;
+    padding: 0 24px;
+  }
+  .company h2 {
+    font-size: var(--m-h3);
+  }
+  .company .company-list {
+    width: 100%;
+    gap: 27px;
+  }
+  .company-list .company-item {
+    width: 100%;
+  }
+  .company-item h3 {
+    font-size: var(--m-h5);
+  }
+  .company-item p {
+    font-size: var(--m-body-m);
+  }
+}
 
 /* 메인 : 강사진 소개 - 김소영 */
+@media (max-width: 430px) {
+  /* 강사 소개 섹션 */
+  .lecturer {
+    padding: 72px 20px;
+    min-height: 1350px;
+  }
+  .lecturer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 40px;
+  }
+  .instructor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .instructor-card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .instructor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .text-center {
+    font-size: var(--m-h3);
+  }
+  .instructor-text {
+    font-size: var(--m-h4);
+  }
 
+  .instructor-info {
+    font-size: var(--m-body-m);
+  }
+}
 /* 메인 : FAQ - 김소영 */
 
 /* 메인 : CTA - 김소영 */
