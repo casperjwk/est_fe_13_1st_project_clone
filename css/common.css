@@ -128,7 +128,7 @@ body {
 }
 
 .inner-pd {
-  padding: calc(var(--base-unit) * 3);
+  padding: calc(var(--base-unit) * 3) 0;
 }
 
 hr {
