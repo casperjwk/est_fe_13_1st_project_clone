@@ -105,17 +105,17 @@ nav ul li a {
   gap: 120px;
 }
 .problem > .title {
-  width: 700px;
+  max-width: 700px;
   height: 100px;
   gap: 16px;
   padding: 30px 8px;
 }
 .question {
-  width: 1180px;
+  max-width: 1180px;
   padding: 0 50px;
 }
 .question-container {
-  width: 200px;
+  min-width: 190px;
   height: 300px;
   gap: 20px;
   padding: 10px;
