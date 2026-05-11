@@ -104,10 +104,9 @@ nav ul li a {
 .problem > .container {
   gap: 120px;
 }
-.problem > .title {
+.problem > .container > .title {
   height: 100px;
   gap: 16px;
-  padding: 30px 8px;
 }
 .question {
   width: 100%;
@@ -134,6 +133,11 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+.question-list:hover li > h3 {
+  background-color: var(--primary-hover);
+  box-shadow: 4px 4px 4px #00000025;
 }
 .question-list li > h3 span {
   font-size: var(--base-unit);
