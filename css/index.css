@@ -21,24 +21,18 @@ nav ul {
   display: flex;
   gap: 50px;
 }
-nav ul li {
-  width: 100%;
-}
 nav ul li a {
   font-weight: bold;
 }
-
 .nav-cta a {
   text-transform: uppercase;
 }
-
 .nav-btn {
   width: 174px;
   flex-shrink: 0;
   white-space: nowrap;
   display: flex;
 }
-
 .nav-btn .btn-small {
   width: 100%;
   box-sizing: border-box;
@@ -70,29 +64,24 @@ nav ul li a {
   font-size: calc(var(--base-font) * 0.875);
   color: var(--text-sub);
 }
-
 .title-text h2 {
   color: var(--text-main);
   margin: 16px 0 32px 0;
 }
-
-.title-text h2>span {
+.title-text h2 > span {
   background: linear-gradient(45deg, #6ee7a8, #4facfe);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-
 .title-text p {
   font-size: var(--body-l);
   color: var(--text-main);
 }
-
 .hero-btn-group {
   display: flex;
   margin-top: 40px;
 }
-
 .title-text .btn-rec,
 .title-text .btn-detail {
   width: 223px;
@@ -103,11 +92,9 @@ nav ul li a {
   justify-content: center;
   box-sizing: border-box;
 }
-
 .title-text a:nth-of-type(1) {
   margin-right: 19px;
 }
-
 .hero img {
   box-shadow:
     0 0 50px 100px rgba(110, 231, 168, 0.5),
@@ -115,14 +102,11 @@ nav ul li a {
     0 0 50px 0 rgba(0, 0, 0, 0.15);
   animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-15px);
   }
@@ -135,7 +119,7 @@ nav ul li a {
   background-color: var(--background);
 }
 
-.problem>.container {
+.problem > .container {
   gap: 120px;
 }
 .problem > .container > .title {
@@ -162,7 +146,7 @@ nav ul li a {
   padding: 10px;
 }
 
-.question-list li>h3 {
+.question-list li > h3 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -178,7 +162,7 @@ nav ul li a {
   box-shadow: 4px 4px 4px #00000025;
 }
 
-.question-list li>h3 span {
+.question-list li > h3 span {
   font-size: var(--base-unit);
 }
 
@@ -188,12 +172,12 @@ nav ul li a {
   background-color: var(--background);
 }
 
-.program>.container {
+.program > .container {
   gap: 32px;
   padding: 64px 0;
 }
 
-.program>.container>.title {
+.program > .container > .title {
   min-width: 327px;
   gap: 16px;
   padding: 30px;
@@ -234,7 +218,7 @@ nav ul li a {
 }
 
 /* 각 단계 li */
-.progress>li {
+.progress > li {
   position: relative;
   z-index: 2;
   list-style: none;
@@ -268,7 +252,7 @@ nav ul li a {
 }
 
 /* active 된 원 */
-.progress>li.active .circle {
+.progress > li.active .circle {
   background-color: var(--primary-light);
   box-shadow: 0 0 0 7px rgba(104, 217, 158, 0.3);
 }
@@ -304,7 +288,7 @@ nav ul li a {
 }
 
 /* 실제 슬라이드들이 가로로 나열되는 부분 */
-.slidercontainer>li {
+.slidercontainer > li {
   display: flex;
   align-items: center;
   text-align: center;
@@ -450,8 +434,8 @@ nav ul li a {
   background: var(--dark-accent2);
 }
 
-.result .container>.text-heading4,
-.result .container>.text-heading5 {
+.result .container > .text-heading4,
+.result .container > .text-heading5 {
   color: var(--background);
 }
 
@@ -550,7 +534,7 @@ nav ul li a {
   background: var(--primary-main);
 }
 
-.process>div.container {
+.process > div.container {
   gap: 80px;
   padding: 0 16px;
 }
@@ -583,7 +567,7 @@ nav ul li a {
   gap: 16px;
 }
 
-.process_card>p {
+.process_card > p {
   color: var(--text-sub);
 }
 

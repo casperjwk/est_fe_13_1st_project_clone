@@ -205,15 +205,6 @@
     margin-left: auto;
     cursor: pointer;
   }
-  .close {
-    display: none;
-  }
-  #menu-toggle:checked ~ header .menu {
-    display: none;
-  }
-  #menu-toggle:checked ~ header .close {
-    display: flex;
-  }
 }
 
 /* 메인 : 히어로 - 김찬희 */
@@ -237,6 +228,7 @@
   .hero-btn-group {
     margin-top: 28px;
   }
+
   .hero-btn-group .btn-rec,
   .hero-btn-group .btn-detail {
     width: 168px;
