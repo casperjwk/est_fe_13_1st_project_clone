@@ -673,6 +673,7 @@ nav ul li a {
 /* 메인 : CTA - 김소영 */
 .cta {
   background: var(--background);
+  padding-bottom: 120px;
 }
 
 .cta-label {
@@ -766,4 +767,44 @@ footer .container {
 
 .footer-bottom {
   padding-top: 32px;
+}
+
+  
+  /* sticky */
+  .sticky-cta {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+.sticky-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  white-space: nowrap;
+}
+.cta-btn {
+  width: 225px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  border-radius: 999px;
+
+  background: var(--gradient-button);
+  color: white;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+footer {
+  padding-bottom: 120px;
 }
