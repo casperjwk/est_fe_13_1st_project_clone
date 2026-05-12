@@ -145,7 +145,29 @@
     display: none;
     overflow-x: hidden;
   }
-  #menu-toggle:checked ~ nav {
+  /* checkbox가 header 안으로 이동했으므로 :has() 로 nav 제어 */
+  body:has(#menu-toggle:checked) nav {
+    display: flex;
+  }
+  /* 햄버거 ↔ close 토글 */
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .close {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  #menu-toggle:checked ~ .menu {
+    display: none;
+  }
+  #menu-toggle:checked ~ .close {
     display: flex;
   }
   .nav-panel {
@@ -189,22 +211,15 @@
   .nav-btn .btn {
     width: auto;
   }
-  /* #menu-toggle:checked ~ .nav-btn {
+  #menu-toggle:checked ~ .nav-btn {
     display: block;
     opacity: 1;
     visibility: visible;
-  } */
+  }
   .nav-btn .btn-small {
     width: 100%;
   }
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-left: auto; */
-    margin-left: auto;
-    cursor: pointer;
-  }
+  /* 메뉴 버튼: 위에서 처리 */
 }
 
 /* 메인 : 히어로 - 김찬희 */
@@ -213,7 +228,7 @@
     flex-direction: column;
   }
 
-  .title-text>span {
+  .title-text > span {
     font-size: var(--m-caption);
   }
 
@@ -255,7 +270,7 @@
     gap: 60px;
   }
 
-  .problem>.container>.title {
+  .problem > .container > .title {
     width: 350px;
     height: 90px;
     gap: 16px;
@@ -281,7 +296,7 @@
     gap: 10px;
   }
 
-  .question-list li>h3 {
+  .question-list li > h3 {
     width: 70px;
     height: 70px;
   }
@@ -294,23 +309,23 @@
     padding: 0;
   }
 
-  .program>.container {
+  .program > .container {
     width: 350px;
     padding: 20px 0;
     gap: 16px;
     flex-direction: column;
   }
 
-  .program>.container>.title {
+  .program > .container > .title {
     gap: 16px;
     height: 150px;
   }
 
-  .program>.container>.title>h3 {
+  .program > .container > .title > h3 {
     font-size: var(--m-h3);
   }
 
-  .program>.container>.title>* {
+  .program > .container > .title > * {
     text-align: center;
   }
 
@@ -325,7 +340,7 @@
     flex-direction: column;
   }
 
-  .slidercontainer>li {
+  .slidercontainer > li {
     transform: translateX(-350.5px);
   }
 
@@ -341,7 +356,7 @@
     flex-direction: column;
   }
 
-  .slider-content>.divider {
+  .slider-content > .divider {
     display: none;
   }
 }
@@ -410,7 +425,7 @@
 
 /* 메인 : 수강생 후기 - 김윤수 */
 @media (max-width: 390px) {
-  .review>div:nth-child(2) {
+  .review > div:nth-child(2) {
     flex-direction: column;
     gap: 40px;
   }
@@ -445,7 +460,7 @@
 
 /* 메인 : 프로세스 - 김윤수 */
 @media (max-width: 390px) {
-  .process>div.container {
+  .process > div.container {
     gap: 40px;
     padding: 0;
   }
@@ -520,7 +535,6 @@
 
 /* 메인 : 강사진 소개 - 김소영 */
 @media (max-width: 390px) {
-
   /* 강사 소개 섹션 */
   .lecturer {
     padding: 72px 20px;
