@@ -19,10 +19,10 @@
 | 이름 | 역할 | 담당 섹션 | GitHub | 연락 |
 |------|------|----------|--------|------|
 | 김소영 | 팀장 | 회사소개 / 강사소개 / FAQ / CTA / Footer | [@s0y0ungk](https://github.com/s0y0ungk) | soyo2039@gmail.com |
-| 최정원 | FE 리드 | 혜택 / 이벤트 / PR 영역 | - | picasomati@gmail.com |
-| 김정우 | UI | 문제제기 / 프로그램 소개 | - | casperjwk@gmail.com |
-| 김윤수 | UI | 목록/상세 / 검색 / 상태관리 / 접근성 | @garam-dev | kys5826911@gmail.com |
-| 김찬희 | UI | Header / Hero | - | - |
+| 최정원 | FE 리드 | 혜택 / 이벤트 / PR 영역 | [RaeChoe](https://github.com/RaeChoe) | picasomati@gmail.com |
+| 김정우 | UI | 문제제기 / 프로그램 소개 | [@casperjwk](https://github.com/casperjwk) | casperjwk@gmail.com |
+| 김윤수 | UI | 목록/상세 / 검색 / 상태관리 / 접근성 | [@Noonting00](https://github.com/Noonting00) | kys5826911@gmail.com |
+| 김찬희 | UI | Header / Hero | [@ckck912ck-lang](https://github.com/ckck912ck-lang) | ckck912ck@gmail.com |
 
 ### 1.3 단계별 진행
 
@@ -220,3 +220,48 @@ sequenceDiagram
 - 이미지 최적화 및 로딩 성능 개선 (Lazy loading 적용)
 - SEO 및 Open Graph 설정 강화로 외부 유입 개선
 - 코드 구조 리팩토링 및 컴포넌트 재사용성 향상
+
+## 8. 실행 방법
+### 1. 클론
+```
+gh repo clone s0y0ungk/est_fe_13_1st_project
+cd portfolio-nextjs_supabase
+```
+### 2. 패키지 설치
+
+### 3. 환경변수 설정
+
+### Supabase URL, ANON KEY, Storage 버킷명 등 입력
+
+### 4. 로컬 실행
+
+### 5. 프로덕션 빌드
+
+## 9. 테스트 계정
+
+## 10. 제작 후기
+- 프로젝트를 진행하면서 단순히 정보를 나열하는 것보다, 사용자가 어떤 흐름으로 페이지를 읽고 행동하는지를 먼저 설계하는 것이 중요하다는 점을 배웠다.
+- 정보 구조를 정리하는 과정에서 과정 소개, 커리큘럼, 후기 같은 요소들이 각각 따로 존재하는 것이 아니라, 신뢰 형성과 신청 유도로 자연스럽게 이어져야 한다는 것을 깨달았다.
+- FAQ나 후기 같은 콘텐츠가 단순 보조 요소가 아니라, 사용자의 결정에 직접적인 영향을 주는 핵심 요소라는 점도 알게 되었다.
+- 디자인 통일성과 반응형 구조는 단순한 완성도가 아니라, 어떤 환경에서도 동일한 경험을 제공하기 위한 필수 요소라는 것을 느낄 수 있었다.
+
+## 11. 기획/디자인 문서
+- **기획서(피그마 슬라이드)**: 사용자 여정, 화면 흐름, 요구사항, 실행계획 정리  
+  링크: https://www.figma.com/deck/jq4CKvl6IA4QmoDVmZ9EFF
+- **디자인 원본(피그마)**: 컴포넌트, 컬러/타이포 스케일, 반응형 레이아웃, 아이콘  
+  링크: https://www.figma.com/design/cTespbRD3YaC5cl353Z5At/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=382-156&t=H6c5PgZvNAw2zCrh-1
+
+  ### 11.1 미리보기
+<!-- /public/readme/ 폴더에 썸네일 PNG를 넣고 경로를 맞춘다 -->
+[![기획서 미리보기](./public/readme/figma_s.png)](https://www.figma.com/deck/jq4CKvl6IA4QmoDVmZ9EFF "피그마 슬라이드로 이동")
+[![디자인 미리보기](./public/readme/figma_d.png)](https://www.figma.com/design/cTespbRD3YaC5cl353Z5At/%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?node-id=382-156&t=H6c5PgZvNAw2zCrh-1 "피그마 디자인으로 이동")
+
+### 11.2 버전 메모
+- v1.0 (2026-04-28): 프로젝트 기획 및 레퍼런스 조사 진행
+- v1.1 (2026-04-29): 기획 발표 및 프로젝트 방향 최종 확정
+- v1.2 (2026-04-30): 디자인 초안 및 전체 UI 구조 설계 시작
+- v1.3 (2026-05-05): 디자인 최종 완성 및 스타일 가이드 정리
+- v1.4 (2026-05-06): 디자인 수정 반영 및 코드 구현 시작
+- v1.5 (2026-05-07): 핵심 레이아웃 및 주요 기능 구조 구현
+- v1.6 (2026-05-10): 모바일 반응형 적용 및 전반적인 UI 검토
+- v1.7 (2026-05-12): 최종 테스트 및 발표 준비 완료
