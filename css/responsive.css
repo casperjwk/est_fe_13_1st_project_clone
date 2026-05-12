@@ -132,7 +132,6 @@
   .logo {
     margin-right: 0;
   }
-
   nav {
     position: fixed;
     top: 72px;
@@ -145,7 +144,6 @@
     display: none;
     overflow-x: hidden;
   }
-
   #menu-toggle:checked ~ nav {
     display: flex;
   }
@@ -226,7 +224,6 @@
   .title-text p {
     font-size: var(--m-body-l);
   }
-
   .hero-btn-group {
     margin-top: 28px;
   }
