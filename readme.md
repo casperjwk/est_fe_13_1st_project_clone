@@ -18,11 +18,11 @@
 
 | 이름 | 역할 | 담당 섹션 | GitHub | 연락 |
 |------|------|----------|--------|------|
-| 김소영 | 팀장 | 회사소개 / 강사소개 / FAQ / CTA / Footer | [@s0y0ungk](https://github.com/s0y0ungk) | soyo2039@gmail.com |
-| 최정원 | FE 리드 | 혜택 / 이벤트 / PR 영역 | [RaeChoe](https://github.com/RaeChoe) | picasomati@gmail.com |
-| 김정우 | UI | 문제제기 / 프로그램 소개 | [@casperjwk](https://github.com/casperjwk) | casperjwk@gmail.com |
-| 김윤수 | UI | 목록/상세 / 검색 / 상태관리 / 접근성 | [@Noonting00](https://github.com/Noonting00) | kys5826911@gmail.com |
-| 김찬희 | UI | Header / Hero | [@ckck912ck-lang](https://github.com/ckck912ck-lang) | ckck912ck@gmail.com |
+| 김소영 | 팀장 UI 기획 디자인 | 회사소개 / 강사소개 / FAQ / CTA / Footer | [@s0y0ungk](https://github.com/s0y0ungk) | soyo2039@gmail.com |
+| 최정원 | FE 리드 UI 기획 디자인 | 혜택 / 이벤트 / PR 영역 | [RaeChoe](https://github.com/RaeChoe) | picasomati@gmail.com |
+| 김정우 | UI 기획 디자인 | 문제제기 / 프로그램 소개 | [@casperjwk](https://github.com/casperjwk) | casperjwk@gmail.com |
+| 김윤수 | UI 기획 디자인 | 목록/상세 / 검색 / 상태관리 / 접근성 | [@Noonting00](https://github.com/Noonting00) | kys5826911@gmail.com |
+| 김찬희 | UI 기획 디자인 | Header / Hero | [@ckck912ck-lang](https://github.com/ckck912ck-lang) | ckck912ck@gmail.com |
 
 ### 1.3 단계별 진행
 
@@ -113,23 +113,23 @@ gantt
 ### 2.1 개발 스택
 
 #### Frontend
-- **Framework**:Next.js 15 (App Router)
-- **Language**: HTML / CSS
-- **Styling**: CSS Modules + CSS Variables 기반 디자인 시스템
-- **Routing**: Next.js App Router
-- **Image Handling**: next/image
-- **State Management**: 기본 DOM 기반 구조 + 최소 클라이언트 상태 관리
+Framework:None
+Language: HTML / CSS
+Styling: CSS Modules + CSS Variables 기반 디자인 시스템
+Routing: None
+Image Handling: image
+State Management: None
 
 #### Backend (BaaS)
-- **Database**: Database: Supabase (PostgreSQL)
-- **Auth**: upabase Auth (이메일 로그인)
-- **Storage**: Supabase Storage (이미지 업로드)
+Database:None
+Auth:None
+Storage: None
 
 #### Tools
-- **Version Control**: Git & GitHub
-- **Deployment**: Vercel
-- **CI/CD**: GitHub Actions (테스트 및 배포 자동화)
-- **Design**: Figma
+Version Control: Git & GitHub
+Deployment: Git 저장소
+CI/CD: GitHub Actions (테스트 및 배포 자동화)
+Design: Figma
 
 ### 2.2 배포 URL
 - **Production**: https://s0y0ungk.github.io/est_fe_13_1st_project/
