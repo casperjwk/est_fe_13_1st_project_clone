@@ -99,6 +99,7 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
+
   .btn-detail {
     height: 60px;
     gap: 10px;
@@ -212,7 +213,7 @@
     flex-direction: column;
   }
 
-  .title-text > span {
+  .title-text>span {
     font-size: var(--m-caption);
   }
 
@@ -254,12 +255,13 @@
     gap: 60px;
   }
 
-  .problem > .container > .title {
+  .problem>.container>.title {
     width: 350px;
     height: 90px;
     gap: 16px;
     padding: 0 8px;
   }
+
   .question {
     min-width: 0;
     padding: 0;
@@ -279,7 +281,7 @@
     gap: 10px;
   }
 
-  .question-list li > h3 {
+  .question-list li>h3 {
     width: 70px;
     height: 70px;
   }
@@ -292,22 +294,23 @@
     padding: 0;
   }
 
-  .program > .container {
+  .program>.container {
     width: 350px;
     padding: 20px 0;
     gap: 16px;
     flex-direction: column;
   }
 
-  .program > .container > .title {
+  .program>.container>.title {
     gap: 16px;
     height: 150px;
   }
 
-  .program > .container > .title > h3 {
+  .program>.container>.title>h3 {
     font-size: var(--m-h3);
   }
-  .program > .container > .title > * {
+
+  .program>.container>.title>* {
     text-align: center;
   }
 
@@ -322,7 +325,7 @@
     flex-direction: column;
   }
 
-  .slidercontainer > li {
+  .slidercontainer>li {
     transform: translateX(-350.5px);
   }
 
@@ -338,7 +341,7 @@
     flex-direction: column;
   }
 
-  .slider-content > .divider {
+  .slider-content>.divider {
     display: none;
   }
 }
@@ -407,7 +410,7 @@
 
 /* 메인 : 수강생 후기 - 김윤수 */
 @media (max-width: 390px) {
-  .review > div:nth-child(2) {
+  .review>div:nth-child(2) {
     flex-direction: column;
     gap: 40px;
   }
@@ -436,12 +439,13 @@
     width: 168px;
     height: 52px;
     font-size: var(--m-body-l);
+    padding: 0;
   }
 }
 
 /* 메인 : 프로세스 - 김윤수 */
 @media (max-width: 390px) {
-  .process > div.container {
+  .process>div.container {
     gap: 40px;
     padding: 0;
   }
@@ -483,6 +487,7 @@
   .company {
     padding: 72px 0;
   }
+
   .company .container {
     width: 100%;
     max-width: 100%;
@@ -490,19 +495,24 @@
     gap: 64px;
     box-sizing: border-box;
   }
+
   .company h2 {
     font-size: var(--m-h3);
   }
+
   .company .company-list {
     width: 100%;
     gap: 27px;
   }
+
   .company-list .company-item {
     width: 100%;
   }
+
   .company-item h3 {
     font-size: var(--m-h5);
   }
+
   .company-item p {
     font-size: var(--m-body-m);
   }
@@ -510,36 +520,43 @@
 
 /* 메인 : 강사진 소개 - 김소영 */
 @media (max-width: 390px) {
+
   /* 강사 소개 섹션 */
   .lecturer {
     padding: 72px 20px;
     min-height: 1350px;
   }
+
   .lecturer .container {
     width: 100%;
     max-width: 100%;
     padding: 0;
     gap: 40px;
   }
+
   .instructor-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
   }
+
   .instructor-card {
     width: 100%;
     align-items: center;
     text-align: center;
   }
+
   .instructor-card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
   }
+
   .text-center {
     font-size: var(--m-h3);
   }
+
   .instructor-text {
     font-size: var(--m-h4);
   }
@@ -548,11 +565,13 @@
     font-size: var(--m-body-m);
   }
 }
+
 /* 메인 : FAQ - 김소영 */
 @media (max-width: 390px) {
   .faq {
     padding: 72px 20px;
   }
+
   .faq-question {
     width: 344px;
     min-height: 55px;
@@ -562,49 +581,60 @@
     align-items: center;
     border-radius: 10px;
   }
+
   .faq-list,
   .faq-item,
   .faq-question {
     overflow: visible;
   }
+
   .faq-list {
     gap: 16px;
   }
+
   .faq-question span {
     font-size: 20px;
     margin-left: 0;
   }
+
   .faq-header h2 {
     font-size: var(--m-h3);
   }
+
   .faq-header p {
     font-size: var(--m-caption);
   }
 }
+
 /* 메인 : CTA - 김소영 */
 @media (max-width: 390px) {
   .cta {
     padding: 72px 20px;
   }
+
   .cta .container {
     width: 100%;
     max-width: 100%;
     padding: 0;
     gap: 40px;
   }
+
   .cta-label {
     font-size: var(--m-caption);
   }
+
   .cta-title {
     font-size: var(--m-h3);
     line-height: 1.4;
     word-break: keep-all;
   }
+
   .cta-button-group {
     display: flex;
     justify-content: center;
     gap: 12px;
   }
+
   .cta-button-group .btn-detail,
   .cta-button-group .btn-rec {
     width: 160px;
@@ -620,6 +650,7 @@
     text-align: center;
   }
 }
+
 /* 푸터- 김소영 */
 @media (max-width: 390px) {
   footer {
