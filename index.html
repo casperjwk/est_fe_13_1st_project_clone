@@ -138,7 +138,12 @@
                     <span class="material-icons">access_time</span>
                   </h3>
                 </li>
-                <li><h4 class="text-heading6">나이가 늦은건 아닐까?</h4></li>
+                <li>
+                  <h4 class="text-heading6">
+                    나이가 늦은건 <br />
+                    아닐까?
+                  </h4>
+                </li>
                 <li>
                   <p class="text-body-m">
                     늦은 나이에 시작해도 <br />
@@ -164,7 +169,8 @@
                 <li>
                   <p class="text-body-m">
                     교육 후에 실제로 취업까지 <br />
-                    연결될 수 있을지 불안하신가요?
+                    연결될 수 있을지 <br />
+                    불안하신가요?
                   </p>
                 </li>
               </ul>
@@ -194,8 +200,8 @@
         </div>
       </section>
       <hr class="container" />
-      <section id="curriculum" class="program">
-        <div class="container d-flex justify-content-between">
+      <section class="program">
+        <div class="container d-flex">
           <h2 class="hidden">프로그램 소개</h2>
           <div class="title d-flex flex-column g-1">
             <h3 class="text-heading5">
@@ -441,7 +447,9 @@
               멘토진과 운영진들이 항상 상주하여 도움을 주신 것도 공부에만 집중할 수 있는 큰 힘이
               되었다고 생각합니다.
             </p>
-            <p class="student-name">지브이랩 김O연님</p>
+            <div class="student-name">
+            <p>지브이랩 김O연님</p>
+            </div>
           </div>
           <div class="student-profile">
             <div class="scope-head">
@@ -454,7 +462,9 @@
               나의 취업을 진심을 다해 도와주시고 계신다는 느낌을 받아 지칠때 마다 다시 힘을 낼 수
               있었습니다.
             </p>
-            <p class="student-name">위니브 황O헌님</p>
+            <div class="student-name">
+              <p>위니브 황O헌님</p>
+            </div>
           </div>
           <div class="student-profile">
             <div class="scope-head">
@@ -466,11 +476,13 @@
               장점인 것 같습니다. 컬리큘럼 내에 있는 모델 뿐만 아니라 새롭게 발표되는 모델에 대한
               내용과 코드에 대해 접할 수 있어서 공부할 때 가장 큰 도움이 되었습니다.
             </p>
-            <p class="student-name">이스트소프트 정O익님</p>
+            <div class="student-name">
+              <p>이스트소프트 정O익님</p>
+            </div>
           </div>
         </div>
         <div class="container d-flex justify-content-center">
-          <a href="" class="btn-detail">후기 살펴보기</a>
+          <a href="" class="btn-detail more-review">후기 살펴보기</a>
         </div>
       </section>
       <hr class="container" />
@@ -485,7 +497,7 @@
               <div class="process_circle"></div>
               <div class="process_card">
                 <div class="process_step"><p>1단계</p></div>
-                <h6 class="text-heading6">기초 다지기</h6>
+                <h3 class="text-heading6">기초 다지기</h3>
                 <p class="text-body-m">HTML, CSS, JavaScript 기초부터 차근차근</p>
               </div>
             </div>
@@ -493,7 +505,7 @@
               <div class="process_circle"></div>
               <div class="process_card">
                 <div class="process_step"><p>2단계</p></div>
-                <h6 class="text-heading6">React 실전</h6>
+                <h3 class="text-heading6">React 실전</h3>
                 <p class="text-body-m">React로 실제 서비스 개발 역량 향상</p>
               </div>
             </div>
@@ -501,7 +513,7 @@
               <div class="process_circle"></div>
               <div class="process_card">
                 <div class="process_step"><p>3단계</p></div>
-                <h6 class="text-heading6">팀 프로젝트 &amp; 취업 준비</h6>
+                <h3 class="text-heading6">팀 프로젝트 &amp; 취업 준비</h3>
                 <p class="text-body-m">실전 프로젝트와 포트폴리오 완성, 면접 대비</p>
               </div>
             </div>
@@ -578,14 +590,14 @@
       <!-- 강사진 소개 -->
       <section class="lecturer inner-pd">
         <div class="container d-flex flex-column">
-          <h2 class="text-heading4 text-center">최고의 강사진이 기다리고 있습니다.</h2>
+          <h2 class="text-center text-heading4">최고의 강사진이<span class="mobile-br"><br /></span> 기다리고 있습니다.</h2>
 
           <div class="instructor-list d-flex text-center justify-content-between">
             <div class="instructor-card d-flex flex-column align-items-center g-1">
               <img src="./images/lecturer_1.png" alt="김태훈 강사 프로필" />
               <div class="instructor-text">
-                <h3 class="text-heading6 instructor-name">김태훈</h3>
-                <h4 class="text-heading6 instructor-role">수석 강사</h4>
+                <h3 class="instructor-name text-heading6">김태훈</h3>
+                <h4 class="instructor-role text-heading6">수석 강사</h4>
               </div>
               <div class="text-body-m instructor-info">
                 <p>전 네이버 프론트엔드 개발자</p>
@@ -620,45 +632,51 @@
           </div>
         </div>
       </section>
-      <section id="faq" class="FAQ inner-pd">
+      <section id="faq" class="faq inner-pd">
         <div class="container">
           <div class="faq-header text-center">
             <h2 class="text-heading4">자주 묻는 질문</h2>
-            <p class="text-caption">궁금한 점이 있으신가요?</p>
+            <p class="text-caption expand_more">궁금한 점이 있으신가요?</p>
           </div>
-          <div class="faq-list d-flex flex-column align-items-center g-1">
-            <!-- 질문 -->
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h3 class="text-body-l">
-                  Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
-                </h3>
-                <span class="material-icons arrow expand_more">expand_more</span>
-              </button>
+          <div class="faq-list">
+            <!-- 질문 1 -->
+            <div class="faq-item">
+              <h3 class="faq-question text-body-l">
+                Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?
+                <span class="material-icons expand_more">expand_more</span>
+              </h3>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h3 class="text-body-l">Q. 학교, 직장 등과 병행이 가능한가요?</h3>
-                <span class="material-icons arrow expand_more">expand_more</span>
-              </button>
+
+            <!-- 질문 2 -->
+            <div class="faq-item">
+              <h3 class="faq-question text-body-l">
+                Q. 학교, 직장 등과 병행이 가능한가요?
+                <span class="material-icons expand_more">expand_more</span>
+              </h3>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h3 class="text-body-l">Q. 지원 자격이 있나요?</h3>
-                <span class="material-icons arrow expand_more">expand_more</span>
-              </button>
+
+            <!-- 질문 3 -->
+            <div class="faq-item">
+              <h3 class="faq-question text-body-l">
+                Q. 지원 자격이 있나요?
+                <span class="material-icons expand_more">expand_more</span>
+              </h3>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h3 class="text-body-l">Q. 다른기관에서 교육을 받았는데 신청 가능할까요?</h3>
-                <span class="material-icons arrow expand_more">expand_more</span>
-              </button>
+
+            <!-- 질문 4 -->
+            <div class="faq-item">
+              <h3 class="faq-question text-body-l">
+                Q. 다른기관에서 교육을 받았는데 신청 가능할까요?
+                <span class="material-icons expand_more">expand_more</span>
+              </h3>
             </div>
-            <div class="faq-item d-flex align-items-center justify-content-between">
-              <button class="faq-question d-flex align-items-center justify-content-between">
-                <h3 class="text-body-l">Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</h3>
-                <span class="material-icons arrow expand_more">expand_more</span>
-              </button>
+
+            <!-- 질문 5 -->
+            <div class="faq-item">
+              <h3 class="faq-question text-body-l">
+                Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?
+                <span class="material-icons expand_more">expand_more</span>
+              </h3>
             </div>
           </div>
         </div>
