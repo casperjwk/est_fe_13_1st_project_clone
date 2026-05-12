@@ -1,23 +1,23 @@
 /* 공통 */
 @media (max-width: 390px) {
-  .container {
-    width: 350px;
-  }
   .inner-pd {
     padding: calc(var(--m-base-unit) * 3) 0;
   }
 
   /* 갭 조정 */
   .g-1 {
-    gap: calc(var(--m-base-unit) * 0.5); /* 12 */
+    gap: calc(var(--m-base-unit) * 0.5);
+    /* 12 */
   }
 
   .g-2 {
-    gap: var(--m-base-unit); /* 24 */
+    gap: var(--m-base-unit);
+    /* 24 */
   }
 
   .g-3 {
-    gap: calc(var(--m-base-unit) * 2); /* 48 */
+    gap: calc(var(--m-base-unit) * 2);
+    /* 48 */
   }
 
   /* 타이포그래피 조정 */
@@ -28,6 +28,7 @@
     letter-spacing: -0.03em;
     font-weight: 700;
   }
+
   .text-heading3 {
     /* 대형 섹션 타이틀 */
     font-size: var(--m-h3);
@@ -35,6 +36,7 @@
     letter-spacing: -0.02em;
     font-weight: 700;
   }
+
   .text-heading4 {
     /* 섹션 타이틀 */
     font-size: var(--m-h4);
@@ -42,6 +44,7 @@
     letter-spacing: -0.01em;
     font-weight: 700;
   }
+
   .text-heading5,
   .text-heading6 {
     /* 중간, 카드 타이틀 */
@@ -50,6 +53,7 @@
     letter-spacing: -0.01em;
     font-weight: 700;
   }
+
   .text-body-l {
     /* 강조 본문 */
     font-size: var(--m-body-l);
@@ -57,11 +61,13 @@
     letter-spacing: -0.01em;
     font-weight: 500;
   }
+
   .text-body-m {
     /* 기본 본문 */
     font-size: var(--m-body-m);
     line-height: 1.6;
   }
+
   .text-caption {
     /* 보조 텍스트 */
     font-size: var(--m-caption);
@@ -77,6 +83,7 @@
     border-radius: 100px;
     font-size: var(--m-body-l);
   }
+
   .btn-big {
     height: 60px;
     gap: 10px;
@@ -84,6 +91,7 @@
     border-radius: 100px;
     font-size: var(--m-body-l);
   }
+
   .btn-rec {
     height: 60px;
     gap: 10px;
@@ -91,7 +99,15 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
+  .btn-detail {
+    height: 60px;
+    gap: 10px;
+    padding: 0 55px;
+    border-radius: 15px;
+    font-size: var(--m-body-l);
+  }
 }
+
 /* 헤더 - 김찬희 */
 @media (max-width: 390px) {
   header {
@@ -112,9 +128,11 @@
     justify-content: space-between;
     height: 72px;
   }
+
   .logo {
     margin-right: 0;
   }
+
   nav {
     position: fixed;
     top: 72px;
@@ -127,6 +145,7 @@
     display: none;
     overflow-x: hidden;
   }
+
   #menu-toggle:checked ~ nav {
     display: flex;
   }
@@ -187,34 +206,31 @@
     margin-left: auto;
     cursor: pointer;
   }
-  .close {
-    display: none;
-  }
-  #menu-toggle:checked ~ header .menu {
-    display: none;
-  }
-  #menu-toggle:checked ~ header .close {
-    display: flex;
-  }
 }
+
 /* 메인 : 히어로 - 김찬희 */
 @media (max-width: 390px) {
   .hero .container {
     flex-direction: column;
   }
+
   .title-text > span {
     font-size: var(--m-caption);
   }
+
   .title-text h2 {
     font-size: var(--m-h2);
     margin-bottom: 24px;
   }
+
   .title-text p {
     font-size: var(--m-body-l);
   }
+
   .hero-btn-group {
     margin-top: 28px;
   }
+
   .hero-btn-group .btn-rec,
   .hero-btn-group .btn-detail {
     width: 168px;
@@ -225,6 +241,7 @@
     box-sizing: border-box;
     z-index: 1;
   }
+
   .hero img {
     width: 260px;
     /* max-width: 100%; */
@@ -232,70 +249,465 @@
     margin-top: 56px;
   }
 }
+
 /* 메인 : 문제 제기 - 김정우 */
+@media (max-width: 390px) {
+  .problem {
+    padding: 96px 20px;
+    gap: 60px;
+  }
+
+  .problem > .container > .title {
+    width: 350px;
+    height: 90px;
+    gap: 16px;
+    padding: 0 8px;
+  }
+  .question {
+    min-width: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+  }
+
+  .question-container {
+    width: 170px;
+    height: 250px;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .question-list {
+    gap: 10px;
+  }
+
+  .question-list li > h3 {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 /* 메인 : 프로그램 소개 - 김정우 */
+@media (max-width: 390px) {
+  .program {
+    height: 844px;
+    padding: 0;
+  }
+
+  .program > .container {
+    width: 350px;
+    padding: 20px 0;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .program > .container > .title {
+    gap: 16px;
+    height: 150px;
+  }
+
+  .program > .container > .title > h3 {
+    font-size: var(--m-h3);
+  }
+  .program > .container > .title > * {
+    text-align: center;
+  }
+
+  .progress {
+    width: 350px;
+    height: 80px;
+  }
+
+  .sliderwrap {
+    width: 350px;
+    height: 380px;
+    flex-direction: column;
+  }
+
+  .slidercontainer > li {
+    transform: translateX(-350.5px);
+  }
+
+  .slider {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 310px;
+  }
+
+  .slider-content {
+    width: 350px;
+    height: 310px;
+    flex-direction: column;
+  }
+
+  .slider-content > .divider {
+    display: none;
+  }
+}
 
 /* 메인 : 혜택 - 최정원 */
 @media (max-width: 390px) {
   .benefit-icon span {
     font-size: 36px;
   }
+
   .benefit-cards ul {
     flex-wrap: wrap;
     gap: 16px;
     row-gap: calc(var(--m-base-unit) * 2);
   }
+
   .benefit-cards ul li {
     width: 167px;
     height: inherit;
     padding: var(--m-base-unit) 0;
     gap: 18px;
   }
+
   .benefit-cards .text-body-m {
-    height: 64px;
+    height: 80%;
   }
+
   .benefit-cards ul li:first-child .text-body-m {
-    width: 123px;
+    width: 90%;
   }
+
   .benefit-cards ul li:nth-child(2) .text-body-m {
-    width: 167px;
+    width: 90%;
   }
+
   .benefit-cards ul li:nth-child(3) .text-body-m {
-    width: 148px;
+    width: 90%;
   }
+
   .benefit-cards ul li:last-child .text-body-m {
-    width: 158px;
+    width: 90%;
   }
 }
+
 /* 메인 : 결과 - 최정원 */
 @media (max-width: 390px) {
   .result {
     gap: calc(var(--m-base-unit) * 4);
   }
+
   .resultList {
     flex-wrap: wrap;
     gap: 16px;
     row-gap: var(--m-base-unit);
   }
+
   .resultList li {
-    width: 167px;
+    width: 45%;
   }
+
   .companySlide img {
     height: 50px;
     padding: 16px;
   }
 }
+
 /* 메인 : 수강생 후기 - 김윤수 */
+@media (max-width: 390px) {
+  .review > div:nth-child(2) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .student-profile {
+    width: 320px;
+    height: 320px;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .scope-head {
+    width: 280px;
+  }
+
+  .student-comment {
+    width: 280px;
+  }
+
+  .student-name {
+    width: 280px;
+  }
+
+  .more-review {
+    width: 168px;
+    height: 52px;
+    font-size: var(--m-body-l);
+  }
+}
 
 /* 메인 : 프로세스 - 김윤수 */
+@media (max-width: 390px) {
+  .process > div.container {
+    gap: 40px;
+    padding: 0;
+  }
+
+  .process_area:nth-of-type(2) {
+    gap: calc(var(--m-base-unit) * 2);
+  }
+
+  .process_cell {
+    width: 300px;
+    height: 110px;
+  }
+
+  .process_circle {
+    display: none;
+  }
+
+  .process_card {
+    width: 300px;
+    height: 110px;
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .process_step {
+    width: 50px;
+    height: 24px;
+  }
+
+  .process_step p {
+    font-size: var(--m-body-l);
+  }
+}
 
 /* 메인 : 회사소개 - 김소영 */
+@media (max-width: 390px) {
+  .company {
+    padding: 72px 0;
+  }
+  .company .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 64px;
+    box-sizing: border-box;
+  }
+  .company h2 {
+    font-size: var(--m-h3);
+  }
+  .company .company-list {
+    width: 100%;
+    gap: 27px;
+  }
+  .company-list .company-item {
+    width: 100%;
+  }
+  .company-item h3 {
+    font-size: var(--m-h5);
+  }
+  .company-item p {
+    font-size: var(--m-body-m);
+  }
+}
 
 /* 메인 : 강사진 소개 - 김소영 */
+@media (max-width: 390px) {
+  /* 강사 소개 섹션 */
+  .lecturer {
+    padding: 72px 20px;
+    min-height: 1350px;
+  }
+  .lecturer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 40px;
+  }
+  .instructor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .instructor-card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .instructor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .text-center {
+    font-size: var(--m-h3);
+  }
+  .instructor-text {
+    font-size: var(--m-h4);
+  }
 
+  .instructor-info {
+    font-size: var(--m-body-m);
+  }
+}
 /* 메인 : FAQ - 김소영 */
-
+@media (max-width: 390px) {
+  .faq {
+    padding: 72px 20px;
+  }
+  .faq-question {
+    width: 344px;
+    min-height: 55px;
+    font-size: var(--m-caption);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .faq-list,
+  .faq-item,
+  .faq-question {
+    overflow: visible;
+  }
+  .faq-list {
+    gap: 16px;
+  }
+  .faq-question span {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .faq-header h2 {
+    font-size: var(--m-h3);
+  }
+  .faq-header p {
+    font-size: var(--m-caption);
+  }
+}
 /* 메인 : CTA - 김소영 */
-
+@media (max-width: 390px) {
+  .cta {
+    padding: 72px 20px;
+  }
+  .cta .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 40px;
+  }
+  .cta-label {
+    font-size: var(--m-caption);
+  }
+  .cta-title {
+    font-size: var(--m-h3);
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .cta-button-group .btn-detail,
+  .cta-button-group .btn-rec {
+    width: 160px;
+    height: 50px;
+    gap: 10px;
+    padding: 0 28px;
+    border-radius: 15px;
+    font-size: var(--m-body-l);
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 /* 푸터- 김소영 */
+@media (max-width: 390px) {
+  footer {
+    padding: 72px 0 40px;
+  }
+
+  footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* 전체 구조 */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 로고 */
+  .footer-logo img {
+    width: 140px;
+    height: auto;
+  }
+
+  /* 오른쪽 영역 */
+  .footer-right {
+    width: 100%;
+    gap: 32px;
+  }
+
+  /* 상단 */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* 정책 + 문의 */
+  .footer-policy-wrap,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-policy,
+  .footer-contact ul {
+    gap: 8px;
+  }
+
+  .footer-policy-wrap p,
+  .footer-contact p {
+    font-size: var(--m-caption);
+  }
+
+  .footer-policy a,
+  .footer-contact li {
+    font-size: var(--m-caption);
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+
+  /* SNS */
+  .footer-sns {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-sns img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 하단 */
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom p {
+    font-size: var(--m-caption);
+    word-break: keep-all;
+  }
+}
