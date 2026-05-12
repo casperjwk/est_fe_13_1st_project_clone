@@ -231,14 +231,18 @@ hr {
   height: calc(var(--base-unit) * 2.5);
   padding: 0 57px;
   gap: 10px;
+  padding: 0 60px;
   border: 1px solid var(--dark-accent1);
   border-radius: 100px;
   background: var(--background);
   align-items: center;
   text-align: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   font-size: var(--body-l);
   font-weight: 700;
   white-space: nowrap;
+  z-index: 9999;
 }
 .sticky > span {
   font-size: 30px;
