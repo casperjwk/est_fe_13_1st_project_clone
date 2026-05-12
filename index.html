@@ -12,6 +12,7 @@
   </head>
   <body>
     <!-- 김찬희 -->
+    <input type="checkbox" id="menu-toggle" hidden />
     <header>
       <div class="container d-flex justify-content-between align-items-center">
         <h1 class="logo">
@@ -35,16 +36,41 @@
               <a href="#faq" class="nav-link">faq</a>
             </li>
           </ul>
+          <div class="nav-btn">
+            <a href="" class="btn btn-small">
+              <span>무료 신청하기</span>
+              <span class="material-icons arrow">arrow_forward</span>
+            </a>
+          </div>
         </nav>
+        <label for="menu-toggle" class="material-icons menu"> menu </label>
+        <label for="menu-toggle" class="material-icons close"> close </label>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-panel">
+        <ul class="d-flex align-items-center text-body-m">
+          <li>
+            <a href="#curriculum" class="nav-link active">커리큘럼</a>
+          </li>
+          <li>
+            <a href="#result" class="nav-link">취업성과</a>
+          </li>
+          <li>
+            <a href="#review" class="nav-link">수강후기</a>
+          </li>
+          <li class="nav-cta">
+            <a href="#faq" class="nav-link">faq</a>
+          </li>
+        </ul>
         <div class="nav-btn">
           <a href="" class="btn btn-small">
             <span>무료 신청하기</span>
             <span class="material-icons arrow">arrow_forward</span>
           </a>
         </div>
-        <button class="material-icons menu">menu</button>
       </div>
-    </header>
+    </nav>
     <main>
       <section class="hero inner-pd">
         <div class="container d-flex justify-content-between align-items-center">

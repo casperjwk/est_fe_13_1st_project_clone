@@ -12,7 +12,13 @@ header {
   background: var(--background);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+nav {
+  display: flex;
+  align-items: center;
+  gap: 223px;
+}
 nav ul {
+  display: flex;
   gap: 50px;
 }
 nav ul li a {
@@ -25,11 +31,15 @@ nav ul li a {
   width: 174px;
   flex-shrink: 0;
   white-space: nowrap;
+  display: flex;
 }
 .nav-btn .btn-small {
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+}
+#menu-toggle:checked ~ nav {
+  display: flex;
 }
 .menu {
   display: none;
@@ -37,11 +47,18 @@ nav ul li a {
   border: none;
   cursor: pointer;
 }
+.menu,
+.close {
+  display: none;
+}
 
 /* 메인 : 히어로 - 김찬희 */
 .hero {
   margin-top: 96px;
   background: var(--background);
+}
+.title-text {
+  z-index: 1;
 }
 .title-text > span {
   font-size: calc(var(--base-font) * 0.875);
