@@ -21,24 +21,18 @@ nav ul {
   display: flex;
   gap: 50px;
 }
-nav ul li {
-  width: 100%;
-}
 nav ul li a {
   font-weight: bold;
 }
-
 .nav-cta a {
   text-transform: uppercase;
 }
-
 .nav-btn {
   width: 174px;
   flex-shrink: 0;
   white-space: nowrap;
   display: flex;
 }
-
 .nav-btn .btn-small {
   width: 100%;
   box-sizing: border-box;
@@ -70,29 +64,24 @@ nav ul li a {
   font-size: calc(var(--base-font) * 0.875);
   color: var(--text-sub);
 }
-
 .title-text h2 {
   color: var(--text-main);
   margin: 16px 0 32px 0;
 }
-
 .title-text h2 > span {
   background: linear-gradient(45deg, #6ee7a8, #4facfe);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-
 .title-text p {
   font-size: var(--body-l);
   color: var(--text-main);
 }
-
 .hero-btn-group {
   display: flex;
   margin-top: 40px;
 }
-
 .title-text .btn-rec,
 .title-text .btn-detail {
   width: 223px;
@@ -103,11 +92,9 @@ nav ul li a {
   justify-content: center;
   box-sizing: border-box;
 }
-
 .title-text a:nth-of-type(1) {
   margin-right: 19px;
 }
-
 .hero img {
   box-shadow:
     0 0 50px 100px rgba(110, 231, 168, 0.5),
@@ -115,13 +102,11 @@ nav ul li a {
     0 0 50px 0 rgba(0, 0, 0, 0.15);
   animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-15px);
   }
