@@ -229,7 +229,6 @@ hr {
   left: 50%;
   transform: translateX(-50%);
   height: calc(var(--base-unit) * 2.5);
-  padding: 0 57px;
   gap: 10px;
   padding: 0 60px;
   border: 1px solid var(--dark-accent1);

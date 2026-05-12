@@ -107,6 +107,26 @@
     border-radius: 15px;
     font-size: var(--m-body-l);
   }
+  .sticky {
+    font-size: var(--m-body-l);
+    gap: 5px;
+    padding: 0 20px;
+    height: calc(var(--m-base-unit) * 2.5);
+  }
+  .sticky span {
+    font-size: var(--m-h5);
+  }
+  .btn-sticky {
+    height: calc(var(--m-base-unit) * 1.5);
+    padding: 0 20px;
+    gap: 5px;
+  }
+  .btn-sticky span {
+    font-size: var(--m-body-l);
+  }
+  .btn-sticky .arrow {
+    display: none;
+  }
 }
 
 /* 헤더 - 김찬희 */
