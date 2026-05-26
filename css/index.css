@@ -112,6 +112,25 @@ nav ul li a {
   }
 }
 
+/*팝업*/
+.popup{
+  position: fixed;
+  left: 50px;
+  top: 200px;
+  padding: 20px 40px;
+  border: #eee 1px solid;
+  border-radius: 20%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+  display: none;
+}
+.popup > p{
+font-size: var(--caption);
+}
+.popup > button:hover{
+  cursor: pointer;
+}
 /* 메인 : 문제 제기 - 김정우 */
 .problem {
   padding: 96px 0;
